@@ -1,0 +1,116 @@
+/* :root {
+  --primary-colour: #F6F9F1;
+  --secondary-colour: #DDE2C6;
+  --accent-colour: #008F26;
+  --dark-colour: #00290B;
+  --alt-dark-colour: #190933;
+} */
+  
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* color: var(--dark-colour); */
+  overflow-x: hidden;
+  position: relative;
+  font-size: 20px;
+  background: #000;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: #fff;
+}
+
+/* Utilities */
+.contain {
+  max-width: 992px;
+  padding: 0 12;
+}
+
+.button {
+  text-decoration: none !important;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 2px;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: 3px solid #fff;
+  color: #fff;
+}
+
+.btn-transparent:hover {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.5s;
+}
+
+#bpf-brand {
+  color: #fff;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+#home-hero {
+  background: url(/img/bp-hero.jpg) center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#home-hero .container,
+#home-hero .row, 
+#home-hero .col {
+  height: 100%
+}
+
+#home-hero .headline {
+  font-size: 2.5em;
+}
+
+#home-about {
+  color: white;
+  background: #000;
+}
+
+#footer {
+  background: #fff;
+  font-size: 16px;
+  color: #212529
+}
+
+#footer a {
+  color: #212529;
+}
+
+/* ABOUT PAGE */
+#about-me {
+  color: #fff;
+}
+
+#about-me .navbar .container-fluid div ul li,
+#training .navbar .container-fluid div ul li {
+  margin: 0 8px;
+}
+
+#about-me .navbar .container-fluid div ul li a,
+#training .navbar .container-fluid div ul li a {
+  color: #fff;
+}
+
+.active-page {
+  border-bottom: 2px solid #fff;
+}
+
+
