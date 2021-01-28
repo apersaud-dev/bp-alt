@@ -1,10 +1,10 @@
-/* :root {
-  --primary-colour: #F6F9F1;
-  --secondary-colour: #DDE2C6;
-  --accent-colour: #008F26;
-  --dark-colour: #00290B;
-  --alt-dark-colour: #190933;
-} */
+:root {
+  --primary-colour: #2892D7;
+  --secondary-colour: #1D70A2;
+  --light-colour: #E5E7E6;
+  --dark-colour: #141301;
+  --gray-tone: #7D7D74
+}
   
 * {
   padding: 0;
@@ -13,27 +13,22 @@
 }
 
 body {
-  /* color: var(--dark-colour); */
+  background-color: var(--light-colour);
   overflow-x: hidden;
   position: relative;
   font-size: 20px;
   font-family: 'Pavanam', sans-serif;
-  background: #fff;
-  color: #000;
+  color: var(--dark-colour);
 }
 
-h1 {
-  font-family: 'Cabin', sans-serif;
-  ;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
 }
 
-h2, h3, h4, h5, h6 {
-  font-family: 'Hind Madurai', sans-serif;
-  font-weight: 500;
-}
-
-a {
-  color: #000;
+a, a:hover {
+  text-decoration: none;
+  color: var(--light-colour)
 }
 
 /* Utilities */
@@ -62,32 +57,12 @@ a {
   transition: all 0.5s;
 }
 
-/* Page */
-#contact-content:before {
-  content: '';
-  position: absolute;
-  width: 100%; 
-  height: 80%;
-  top: 80;
-  left: 0;
-  background-color: rgba(0,0,0,0.5);
-}
-
-#contact-content {
-  background: url('/bp-alt/img/garrett-butler-UrJ-fn2iRUM-unsplash.jpg') center center/cover;
-  height: 100vh;
-}
-
-#contact h2, 
-#contact p {
-  color: #11B5E4;
-}
-
+/* Navbar */
 #bpf-brand {
-  color: #000;
-  font-family: 'Cabin', sans-serif;
-  font-weight: 700;
-  font-size: 1.5em;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 60px;
 }
 
 .navbar .nav-item .nav-link {
@@ -95,26 +70,74 @@ a {
   font-weight: 500;
 }
 
-#footer {
-  background: #fff;
-  font-size: 16px;
-  color: #212529
-}
-
-#footer a {
-  color: #212529;
-}
-
 #contact .navbar .container-fluid div ul li {
   margin: 0 8px;
 }
 
-#contact .navbar .container-fluid div ul li a {
-  color: #000;
+.navbar .navbar-nav .nav-item a,
+.navbar .container-fluid div span a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight:500;
 }
 
-.active-page {
-  border-bottom: 2px solid #000;
+.navbar .navbar-nav .nav-item a:hover,
+.navbar .container-fluid div span a:hover {
+  color: var(--primary-colour);
+  transition: 0.3s;
+}
+
+.navbar .navbar-nav .nav-item .active-page {
+  color: var(--primary-colour)
+}
+
+/* Hero Section */
+.parallax {
+  background-image: url('/img/[contact]\ Bry\ outdoor\ stretch.jpeg');
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(6, 23, 35, 0.53);
+}
+
+.hero .container {
+  text-align: center;
+  height: 100%;
+}
+
+.hero .container .row {
+  height: 100%;
+}
+
+.hero .hero-content {
+  color: #fff;
+  z-index: 2;
+}
+
+.hero .hero-content a span:hover {
+  transform: translateY(10px);
+  transition: 0.5s;
+}
+
+/* Form */
+#contact {
+  color: var(--dark-colour);
+}
+
+#contact h2 {
+  font-size: 1.75em;
+  padding: 20px 0;
 }
 
 .form-floating label {
@@ -125,4 +148,40 @@ a {
   height: 200px;
 }
 
+.form-button {
+  text-decoration: none !important;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Pavanam', sans-serif;
+  padding: 10px 30px;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: var(--primary-colour);
+  color: #fff;
+}
 
+/* Follow */
+.social-button {
+  text-decoration: none !important;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 2.5em;;
+  text-transform: uppercase;
+  color: var(--primary-colour);
+  background-color: var(--light-colour);
+  padding: 10px 30px;
+  border: 2px solid var(--primary-colour);
+  border-radius: 0.25rem;;
+}
+
+/* Footer */
+#footer {
+  background: var(--secondary-colour);
+  font-size: 16px;
+  color: var(--light-colour);
+}
+
+#footer a {
+  color: var(--light-colour);
+}
