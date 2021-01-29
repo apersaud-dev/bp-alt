@@ -1,5 +1,5 @@
 :root {
-  --primary-colour: #2892D7;
+  --primary-colour: #00B8CC;
   --secondary-colour: #1D70A2;
   --light-colour: #E5E7E6;
   --dark-colour: #141301;
@@ -58,11 +58,8 @@ a, a:hover {
 }
 
 /* Navbar */
-#bpf-brand {
-  color: #fff;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  font-size: 60px;
+.navbar {
+  background-color: var(--primary-colour);
 }
 
 .navbar .nav-item .nav-link {
@@ -94,21 +91,11 @@ a, a:hover {
 /* Hero Section */
 .parallax {
   background-image: url('/img/[contact]\ Bry\ outdoor\ stretch.jpeg');
-  height: 100vh;
+  height: calc(100vh - 95px);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.parallax:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background-color: rgba(6, 23, 35, 0.53);
 }
 
 .hero .container {
@@ -122,7 +109,7 @@ a, a:hover {
 
 .hero .hero-content {
   color: #fff;
-  z-index: 2;
+  padding-bottom: 25px;
 }
 
 .hero .hero-content a span:hover {
@@ -177,7 +164,7 @@ a, a:hover {
 
 /* Footer */
 #footer {
-  background: var(--secondary-colour);
+  background: var(--primary-colour);
   font-size: 16px;
   color: var(--light-colour);
 }

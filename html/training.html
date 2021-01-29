@@ -8,47 +8,67 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pavanam&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/stylesheet.css">
 
   <title>Training - Bryan Palma Fitness</title>
 </head>
 <body>
-  <!-- Personal Training -->
-  <section id="training">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <a id="bpf-brand" class="navbar-brand ps-5" href="/index.html">Bryan Palma</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="/html/about.html">About</a>
-            </li>
-            <li class="nav-item active-page">
-              <a class="nav-link" href="/html/training.html">Training</a>
-            </li>
-            <li class="nav-item">
-              <a href="/html/contact.html" class="nav-link">Contact</a>
-            </li>
-          </ul>
-          <span class="navbar-text pe-5">
-            <a href="https://www.instagram.com/palmabryan30/" target="_blank"><span class="fab fa-instagram fa-2x"></span></a>
-          </span>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a id="bpf-brand" class="navbar-brand ps-5" href="/index.html">
+      <img src="/img/BP.png" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/html/about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/html/training.html">Training</a>
+        </li>
+        <li class="nav-item">
+          <a href="/html/contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <span class="navbar-text pe-5 ps-3">
+        <a href="https://www.instagram.com/palmabryan30/" target="_blank"><span class="fab fa-instagram"></span></a>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="parallax-training">
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col hero-content">
+          <h1 class="headline">Training</h1>
+          <a href="#training"><span class="fas fa-chevron-down fa-3x"></span></a>
         </div>
       </div>
-    </nav>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Personal Training -->
+  <section id="training" class="py-4">
     <div class="container my-5">
-      <h1 class="text-center my-5">Training</h1>
       <div class="row">
-        <div class="col-12 col-md-6 order-1">
+        <div class="d-flex flex-column col-12 col-md-5 order-1 justify-content-center p-3">
           <div class="image-wrapper">
             <img src="/img/bp-train.jpg" class="img-fluid" alt="Bryan Palma Headshot">
           </div>
         </div>
-        <div class="col-12 col-md-6 order-2">
+        <div class="col-12 col-md-1 order-2"></div>
+        <div class="col-12 col-md-6 order-3 p-3">
           <h2>Personal Training</h2>
           <p>Looking for a one-on-one personal trainer to help you reach your fitness goals? I offer customized programs that work best for your specific goals. Before we get started, we’ll go through a general assessment and discussion about what success looks like when working with a personal trainer, so that we can figure out the best plan for you.</p>
           <p>What you can expect:</p>
@@ -59,16 +79,17 @@
             <li>Regular two-way communication to keep you on track to your plan</li>
             <li>Currently all virtual</li>
           </ul>
+          <a href="/html/contact.html" class="button btn-alt mt-3">Start Today</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Group Training -->
-   <section id="group-training" class="py-5">
+   <section id="group-training" class="py-4">
      <div class="container">
        <div class="row">
-         <div class="col-12 col-md-6 order-2 order-md-1 p-4">
+         <div class="col-12 col-md-5 order-2 order-md-1 p-4">
            <h2>Group Fitness</h2>
            <p>Looking to workout with your partner, friends or co-workers in a small group setting? I offer customized group fitness sessions for 2-10 people. Each session will include a warm-up, full body workout, and a cool down. The full body workout consists of strength and high-intensity interval training, with options to modify for any fitness level.</p>
            <p>What you can expect:</p>
@@ -78,10 +99,12 @@
              <li>Combination of strength and HIIT exercises</li>
              <li>Currently all virtual</li>
            </ul>
+           <a href="/html/contact.html" class="button btn-alt mt-3">Get Started</a>
          </div>
-         <div class="col-12 col-md-6 order-1 order-md-2 p-4">
+         <div class="col-12 col-md-1 order-2"></div>
+         <div class="d-flex flex-column col-12 col-md-5 order-1 order-md-3 justify-content-center p-3">
           <div class="image-wrapper">
-            <img src="/img/bp-group.jpg" class="img-fluid" alt="Bryan Palma Headshot">
+            <img src="/img/group-training.jpg" class="img-fluid" alt="Bryan Palma training a group of people in a gym">
           </div>
         </div>
       </div>

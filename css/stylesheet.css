@@ -1,6 +1,6 @@
 :root {
-  --primary-colour: #2892D7;
-  --secondary-colour: #1D70A2;
+  --primary-colour: #00B8CC;
+  --secondary-colour: #0B8D9C;
   --light-colour: #E5E7E6;
   --dark-colour: #141301;
   --gray-tone: #7D7D74
@@ -32,8 +32,8 @@ a, a:hover {
 }
 
 /* Utilities */
-.contain {
-  max-width: 992px;
+.width-control {
+  max-width: 1080px;
   padding: 0 12;
 }
 
@@ -51,6 +51,16 @@ a, a:hover {
   text-transform: uppercase;
 }
 
+.btn-alt {
+  background-color: var(--secondary-colour);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.btn-alt:hover {
+  font-weight: 800;
+}
+
 .btn-transparent:hover {
   background-color: #fff;
   color: #000;
@@ -58,15 +68,12 @@ a, a:hover {
 }
 
 /* Navbar */
-#bpf-brand {
-  color: #fff;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  font-size: 60px;
+.navbar {
+  background-color: var(--primary-colour);
 }
 
 .navbar .nav-item .nav-link {
-  font-family: 'Hind Madurai', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 500;
 }
 
@@ -83,7 +90,7 @@ a, a:hover {
 
 .navbar .navbar-nav .nav-item a:hover,
 .navbar .container-fluid div span a:hover {
-  color: var(--primary-colour);
+  color: var(--secondary-colour);
   transition: 0.3s;
 }
 
@@ -91,29 +98,19 @@ a, a:hover {
   color: var(--primary-colour)
 }
 
-/* Hero Section */
+/* Home Hero Section */
 .parallax-home {
   background-image: url('/img/home-hero.jpeg');
-  height: 100vh;
+  min-height: calc(100vh - 95px);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.parallax-home:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background-color: rgba(6, 23, 35, 0.53);
-}
-
 .hero .container {
   text-align: center;
-  height: 100%;
+  height: calc(100vh - 95px);
 }
 
 .hero .container .row {
@@ -121,8 +118,11 @@ a, a:hover {
 }
 
 .hero .hero-content {
-  color: #fff;
-  z-index: 2;
+  padding-bottom: 25px;
+}
+
+.hero .hero-content a {
+  color: var(--primary-colour);
 }
 
 .hero .hero-content a span:hover {
@@ -136,13 +136,38 @@ a, a:hover {
 }
 
 .headline {
+  color: #fff;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 3em;
+}
+
+/* Training */
+.parallax-training {
+  background-image: url('/img/training-hero-edit.jpg');
+  min-height: calc(100vh - 95px);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* About Me */
+.parallax-about {
+  background-image: url('/img/meghan-holmes-buWcS7G1_28-unsplash.jpg');
+  min-height: calc(100vh - 95px);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hello {
+  font-size: 48px;
 }
 
 /* Footer */
 #footer {
-  background: var(--secondary-colour);
+  background: var(--primary-colour);
   font-size: 16px;
   color: var(--light-colour);
 }
