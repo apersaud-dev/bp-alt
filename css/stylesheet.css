@@ -3,7 +3,7 @@
   --secondary-colour: #0B8D9C;
   --light-colour: #E5E7E6;
   --dark-colour: #141301;
-  --gray-tone: #7D7D74
+  --gray-colour:  #303030;
 }
   
 * {
@@ -47,8 +47,15 @@ a, a:hover {
 
 .btn-main {
   background-color: var(--primary-colour);
+  border: 2px solid var(--primary-colour);
   color: #fff;
   text-transform: uppercase;
+}
+
+.btn-main:hover {
+  background-color: var(--secondary-colour);
+  border: 2px solid var(--secondary-colour);
+  transition: all 0.5s;
 }
 
 .btn-alt {
@@ -67,6 +74,36 @@ a, a:hover {
   transition: all 0.5s;
 }
 
+.headline {
+  color: var(--primary-colour);
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.b-shadow-r {
+  /* box-shadow: 6px -6px var(--gray-colour), 6px 0px var(--gray-colour), 0px -6px var(--gray-colour); */
+  border: 6px solid var(--gray-colour);
+}
+
+.bottom-line {
+  height: 3px;
+  width: 12em;
+  position: relative;
+  background-color: var(--gray-colour);
+  display: block;
+  margin: 0 auto 2.5em auto;
+}
+
+.bottom-line::before {
+  content: '';
+  height: 12px;
+  width: 5em;
+  position: absolute;
+  background-color: var(--primary-colour);
+  top: -4px;
+  left: 30%;
+}
+
 /* Navbar */
 .navbar {
   background-color: var(--primary-colour);
@@ -75,10 +112,6 @@ a, a:hover {
 .navbar .nav-item .nav-link {
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
-}
-
-#contact .navbar .container-fluid div ul li {
-  margin: 0 8px;
 }
 
 .navbar .navbar-nav .nav-item a,
@@ -95,15 +128,17 @@ a, a:hover {
 }
 
 .navbar .navbar-nav .nav-item .active-page {
-  color: var(--primary-colour)
+  color: var(--secondary-colour)
 }
 
-/* Home Hero Section */
+
+
+/* HOME PAGE - Hero */
 .parallax-home {
   background-image: url('/img/home-hero.jpeg');
-  min-height: calc(100vh - 95px);
+  min-height: 100vh;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top 35px center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -130,48 +165,172 @@ a, a:hover {
   transition: 0.5s;
 }
 
-/* About BPF */
+/* HOME PAGE - About BPF */
 #about-bpf {
-  height: 100vh;
+  padding-top: 95px;
 }
 
-.headline {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 3em;
-}
-
-/* Training */
-.parallax-training {
-  background-image: url('/img/training-hero-edit.jpg');
-  min-height: calc(100vh - 95px);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* About Me */
+/* ABOUT PAGE */
 .parallax-about {
-  background-image: url('/img/meghan-holmes-buWcS7G1_28-unsplash.jpg');
-  min-height: calc(100vh - 95px);
+  background-image: url('/img/[contact]\ Bry\ outdoor\ stretch.jpeg');
+  min-height: 100vh;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top 91px center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.parallax-about .container {
+  height: 100%;
+}
+
+#about-me {
+  padding-top: 91px;
 }
 
 .hello {
   font-size: 48px;
 }
 
-/* Footer */
+#credentials .accordion-header .accordion-button {
+  background-color: var(--light-colour);
+  color: var(--primary-colour);
+  font-family: 'Pavanam', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: 0em 0.15em 0.65em 0em rgba(0, 0, 0, 0.25);
+}
+
+#credentials .accordion-body {
+  border: none;
+  box-shadow: 0em 0.15em 0.65em 0em rgba(0, 0, 0, 0.25);
+}
+
+/* TRAINING PAGE */
+.parallax-training {
+  background-image: url('/img/training-hero-edit.jpg');
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: top 95px center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-training .container {
+  height: 100%;
+}
+
+#training {
+  padding-top: 95px;
+}
+
+.offering .card {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--light-colour);
+  color: var(--dark-colour);
+  box-shadow: 0em 0.15em 0.65em 0em rgba(0, 0, 0, 0.25);
+  height: 318px;
+}
+
+.offering .row {
+  margin: 20px auto; 
+}
+
+.offering .row .col {
+  margin: 0;
+}
+
+/* FOOTER */
 #footer {
   background: var(--primary-colour);
   font-size: 16px;
   color: var(--light-colour);
 }
 
+.copyright {
+  margin: 0;
+}
+
 #footer a {
   color: var(--light-colour);
+}
+
+#footer a:hover {
+  color: var(--secondary-colour);
+  transition: all 0.5s;
+}
+
+/* MEDIA QUERIES */
+@media(max-width:768px){
+  #bpf-brand {
+    padding: 5px 10px;
+  }
+
+  #bpf-brand img {
+    max-width: 200px;
+  }
+
+  .parallax-about {
+    background-position: top 79px left -200px;
+  }
+
+  .bottom-line {
+    margin-bottom: 25px;
+  }
+
+  #about-me .container > .row {
+    padding: 0;
+  }
+
+  .parallax-training {
+    background-position: top 79px right -100px;
+  }
+
+  #training {
+    padding-top: 79px;
+  }
+
+  .offering .card {
+    margin-bottom: 15px;
+  }
+
+  .offering .card:nth-child(4) {
+    margin-bottom: 0px;
+  }
+
+  hr {
+    margin: 30px 0 16px 0;
+  }
+}
+
+
+@media(max-width:576px){
+  #bpf-brand {
+    padding: 5px;
+  }
+
+  #bpf-brand img {
+    max-width: 150px;
+  }
+
+  .parallax-about {
+    background-position: top 66px left -150px;
+  }
+
+  #about-me,
+  #training {
+    padding-top: 66px;
+  }
+
+  .parallax-training {
+    background-position: top 66px right;
+  }
+
+  #personal-training .offering,
+  #group-training .offering {
+    margin: 0 0 20px 0;
+    padding: 0 6px;
+  }
 }

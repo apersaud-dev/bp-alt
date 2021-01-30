@@ -16,9 +16,9 @@
 </head>
 <body>
   <!-- Navbar -->
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
   <div class="container-fluid">
-    <a id="bpf-brand" class="navbar-brand ps-5" href="/index.html">
+    <a id="bpf-brand" class="navbar-brand" href="/index.html">
       <img src="/img/BP.png" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@
           <a class="nav-link" href="/html/about.html">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/html/training.html">Training</a>
+          <a class="nav-link active-page" href="/html/training.html">Training</a>
         </li>
         <li class="nav-item">
           <a href="/html/contact.html" class="nav-link">Contact</a>
@@ -49,7 +49,6 @@
     <div class="container">
       <div class="row align-items-end">
         <div class="col hero-content">
-          <h1 class="headline">Training</h1>
           <a href="#training"><span class="fas fa-chevron-down fa-3x"></span></a>
         </div>
       </div>
@@ -59,52 +58,129 @@
 
 
   <!-- Personal Training -->
-  <section id="training" class="py-4">
-    <div class="container my-5">
+  <section id="training">
+    <div class="container my-1 my-md-3 my-lg-5">
+      <h1 class="headline text-center">Training</h1>
+      <div class="bottom-line"></div>
       <div class="row">
-        <div class="d-flex flex-column col-12 col-md-5 order-1 justify-content-center p-3">
+        <div class="d-flex flex-column col-12 col-md-6 order-1 justify-content-center p-3">
           <div class="image-wrapper">
             <img src="/img/bp-train.jpg" class="img-fluid" alt="Bryan Palma Headshot">
           </div>
         </div>
-        <div class="col-12 col-md-1 order-2"></div>
-        <div class="col-12 col-md-6 order-3 p-3">
+        <!-- <div class="col-12 col-md-1 order-2"></div> -->
+        <div class="d-flex flex-column col-12 col-md-6 order-3 justify-content-start p-3">
           <h2>Personal Training</h2>
           <p>Looking for a one-on-one personal trainer to help you reach your fitness goals? I offer customized programs that work best for your specific goals. Before we get started, we’ll go through a general assessment and discussion about what success looks like when working with a personal trainer, so that we can figure out the best plan for you.</p>
-          <p>What you can expect:</p>
-          <ul>
-            <li>Introductory conversations on your fitness goals</li>
-            <li>Initial movement assessments to set a baseline for future sessions</li>
-            <li>Weekly training sessions</li>
-            <li>Regular two-way communication to keep you on track to your plan</li>
-            <li>Currently all virtual</li>
-          </ul>
-          <a href="/html/contact.html" class="button btn-alt mt-3">Start Today</a>
+        </div>
+      </div>
+      <div class="row offering">
+        <h2 class="text-center mt-4">What you can expect:</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          <div class="col">
+            <div class="card">
+              <span class="fas fa-clipboard-check fa-3x card-img-top"></span>
+              <div class="card-body">
+                <h5 class="card-title">Initial Assessment</h5>
+                <p class="card-text">We'll talk about your goals and set a baseline for future sessions</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <span class="fas fa-calendar-week fa-3x card-img-top"></span>
+              <div class="card-body">
+                <h5 class="card-title">Weekly Sessions</h5>
+                <p class="card-text">Regularly scheduled sessions to help you achieve your goals</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <span class="fas fa-comments fa-3x card-img-top"></span>
+              <div class="card-body">
+                <h5 class="card-title">Two-Way Communication</h5>
+                <p class="card-text">Ongoing communication to keep you on track to your plan</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <span class="fas fa-laptop-house fa-3x card-img-top"></span>
+              <div class="card-body">
+                <h5 class="card-title">All Virtual</h5>
+                <p class="card-text">Currently, all sessions and communication will be held virtually</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column col-12 align-items-center">
+          <a href="/html/contact.html" class="button btn-main order-4 mt-3">Start Today</a>
         </div>
       </div>
     </div>
   </section>
 
+  <div class="container">
+    <hr>
+  </div>
+
   <!-- Group Training -->
-   <section id="group-training" class="py-4">
+   <section id="group-training" class="my-1 my-lg-5 py-1 py-lg-4">
      <div class="container">
        <div class="row">
-         <div class="col-12 col-md-5 order-2 order-md-1 p-4">
+         <div class="col-12 col-md-6 p-4">
            <h2>Group Fitness</h2>
            <p>Looking to workout with your partner, friends or co-workers in a small group setting? I offer customized group fitness sessions for 2-10 people. Each session will include a warm-up, full body workout, and a cool down. The full body workout consists of strength and high-intensity interval training, with options to modify for any fitness level.</p>
-           <p>What you can expect:</p>
-           <ul>
-             <li>Weekly or monthly 45-minute sessions</li>
-             <li>Demo and instruction for every exercise</li>
-             <li>Combination of strength and HIIT exercises</li>
-             <li>Currently all virtual</li>
-           </ul>
-           <a href="/html/contact.html" class="button btn-alt mt-3">Get Started</a>
          </div>
-         <div class="col-12 col-md-1 order-2"></div>
-         <div class="d-flex flex-column col-12 col-md-5 order-1 order-md-3 justify-content-center p-3">
+         <!-- <div class="col-12 col-md-2"></div> -->
+         <div class="d-flex flex-column col-12 col-md-6 justify-content-center p-3">
           <div class="image-wrapper">
             <img src="/img/group-training.jpg" class="img-fluid" alt="Bryan Palma training a group of people in a gym">
+          </div>
+        </div>
+        <div class="row offering">
+          <h2 class="text-center mt-4">What you can expect:</h2>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+              <div class="card">
+                <span class="fas fa-calendar-week fa-3x card-img-top"></span>
+                <div class="card-body">
+                  <h5 class="card-title">Weekly Sessions</h5>
+                  <p class="card-text">Regularly scheduled to consistently achieve the goals you set</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <span class="fas fa-chalkboard-teacher fa-3x card-img-top"></span>
+                <div class="card-body">
+                  <h5 class="card-title">Exercise Instruction</h5>
+                  <p class="card-text">Demos and instructions for every exercise</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <span class="fas fa-dumbbell fa-3x card-img-top"></span>
+                <div class="card-body">
+                  <h5 class="card-title">Strength &amp; HIIT</h5>
+                  <p class="card-text">A combination of both strength and HIIT workouts</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <span class="fas fa-laptop-house fa-3x card-img-top"></span>
+                <div class="card-body">
+                  <h5 class="card-title">All Virtual</h5>
+                  <p class="card-text">Currently, all sessions and communication will be held virtually</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column col-12 align-items-center">
+            <a href="/html/contact.html" class="button btn-main order-4 mt-3">Get Started</a>
           </div>
         </div>
       </div>
@@ -116,7 +192,7 @@
     <div class="container footer-content">
       <div class="row">
         <div class="col-12 col-md-5 order-2 order-md-1 d-flex align-items-center justify-content-center py-3">
-          <p>&copy; Copyright 2021 Bryan Palma. All Rights Reserved.</p>
+          <p class="copyright">&copy; Copyright 2021 Bryan Palma. All Rights Reserved.</p>
         </div>
         <div class="social col-12 col-md-7 order-1 order-md-2 d-flex align-items-center justify-content-around py-3">
           <a href="https://www.instagram.com/palmabryan30/" target="_blank"><span class="fab fa-instagram fa-2x"></span></a>

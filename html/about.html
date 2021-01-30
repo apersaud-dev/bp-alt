@@ -16,10 +16,10 @@
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
   <div class="container-fluid">
-    <a id="bpf-brand" class="navbar-brand ps-5" href="/index.html">
-      <img src="/img/BP.png" alt="">
+    <a id="bpf-brand" class="navbar-brand" href="/index.html">
+      <img src="/img/BP.png" alt="" class="img-fluid">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="/html/about.html">About</a>
+          <a class="nav-link active-page" href="/html/about.html">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/html/training.html">Training</a>
@@ -49,7 +49,6 @@
     <div class="container">
       <div class="row align-items-end">
         <div class="col hero-content">
-          <h1 class="headline">About Me</h1>
           <a href="#about-me"><span class="fas fa-chevron-down fa-3x"></span></a>
         </div>
       </div>
@@ -60,16 +59,36 @@
   <!-- About -->
   <section id="about-me">
     <div class="container">
-      <div class="row py-5">
-        <h2 class="text-center hello">Hey there!</h2>
+      <h1 class="headline text-center">About Me</h1>
+      <div class="bottom-line"></div>
+      <div class="row">
         <div class="col-12 col-md-5 order-1 p-4">
-          <img src="/img/bp-about.jpg" class="img-fluid" alt="Bryan Palma Headshot">
+          <div class="row">
+            <img src="/img/bp-about.jpg" class="img-fluid" alt="Bryan Palma Headshot">
+          </div>
+          <div class="row mt-3">
+            <div class="accordion" id="credentials">
+              <div class="accordion-item">
+                <h2 class="accordion-header icon open" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Credentials
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#credentials">
+                  <div class="accordion-body">
+                    <p><strong>Certified Personal Trainer</strong><br>National Academy of Sports Medicine</p>
+                    <p><strong>Certified CrossFit Level 1 Trainer</strong><br>National Academy of Sports Medicine</p>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
         </div>
         <div class="col-12 col-md-1 order-3 order-md-2"></div>
         <div class="col-12 col-md-6 order-2 order-md-3 p-4">
           <p>My journey into fitness started before I knew it. I grew up playing competitive basketball and soccer as a teenager. In university, I got into running as a way to improve my endurance for those sports. I soon fell in love with running and ran multiple marathons. A few years later, I became interested in strength training as a way to prevent and recover from running injuries. I started attending fitness classes like CrossFit and other boutique studios. I loved the energy from working out in small groups as well as the individualized coaching that many trainers provided. I wanted to educate myself so that I could bring that energy and coaching to more people. This is when I started my intentional journey into fitness.</p>
           <p>I educated myself through accredited organizations to become a National Academy of Sports Medicine (NASM) Certified Personal Trainer and a CrossFit Level 1 Trainer. I developed practical experience as a trainer at a boutique fitness studio in New York City, where I trained clients through one-on-one personal training and small group classes. I continue to educate myself through additional courses, most recently completing Rehab-U Movement Optimization for Prehab and Performance Level 1 and Achieve Mentors Beyond the CPT.</p>
-          <a href="/html/training.html" class="button btn-alt mt-3">Train With Me</a>
+          <a href="/html/training.html" class="button btn-main mt-3">Train With Me</a>
         </div>
       </div>
     </div>
@@ -79,8 +98,8 @@
   <footer id="footer">
     <div class="container footer-content">
       <div class="row">
-        <div class="col-12 col-md-5 order-2 order-md-1 d-flex align-items-center justify-content-center py-3">
-          <p>&copy; Copyright 2021 Bryan Palma. All Rights Reserved.</p>
+        <div class="col-12 col-md-5 order-2 order-md-1 d-flex flex-column align-items-center justify-content-center py-3">
+          <p class="copyright">&copy; Copyright 2021 Bryan Palma. All Rights Reserved.</p>
         </div>
         <div class="social col-12 col-md-7 order-1 order-md-2 d-flex align-items-center justify-content-around py-3">
           <a href="https://www.instagram.com/palmabryan30/" target="_blank"><span class="fab fa-instagram fa-2x"></span></a>
