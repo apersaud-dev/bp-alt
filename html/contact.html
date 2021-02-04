@@ -16,10 +16,10 @@
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
   <div class="container-fluid">
     <a id="bpf-brand" class="navbar-brand" href="/index.html">
-      <img src="/img/BP.png" alt="">
+      <img src="/img/logo-same-height.png" alt="" class="img-fluid">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -49,7 +49,6 @@
       <div class="container">
         <div class="row align-items-end">
           <div class="col hero-content">
-            <h1>Contact Me</h1>
             <a href="#contact"><span class="fas fa-chevron-down fa-3x"></span></a>
           </div>
         </div>
@@ -59,58 +58,58 @@
 
   <!-- Contact -->
   <section id="contact">
-      <div id="contact-content">
-        <div class="container py-5">
-          <div class="row">
-            <div class="col-12 col-md-6 order-2 order-md-1 p-4">
-              <img src="/img/contact-split.jpeg" alt="" class="img-fluid b-shadow">
+    <div class="container">
+      <h1 class="headline text-center">Contact Me</h1>
+      <div class="bottom-line"></div>
+        <div class="row">
+          <div class="col-12 col-md-6 order-2 order-md-1 p-4">
+            <img src="/img/contact-split.jpeg" alt="" class="img-fluid">
+          </div>
+          <div class="col-12 col-md-6 order-1 order-md-2 p-4">
+            <div class="text-center mb-5">
+              <h2>Have a question?</h2>
+              <p>Fill out the form below and let's chat!</p>
             </div>
-            <div class="col-12 col-md-6 order-1 order-md-2 p-4">
-              <div class="text-center mb-5">
-                <h2>Have a question?</h2>
-                <p>Fill out the form below and let's chat!</p>
+            <form action="">
+              <div class="row mb-3">
+                <div class="col">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingFirstName" placeholder="Taylor">
+                    <label for="floatingFirstName">First Name</label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingLastName" placeholder="Smith">
+                    <label for="floatingLastName">Last Name</label>
+                  </div>
+                </div>
               </div>
-              <form action="">
-                <div class="row mb-3">
-                  <div class="col">
-                    <div class="form-floating mb-3">
-                      <input type="text" class="form-control" id="floatingFirstName" placeholder="Taylor">
-                      <label for="floatingFirstName">First Name</label>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="form-floating">
-                      <input type="text" class="form-control" id="floatingLastName" placeholder="Smith">
-                      <label for="floatingLastName">Last Name</label>
-                    </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingEmail" placeholder="email@example.com">
+                    <label for="floatingEmail">Email Address</label>
                   </div>
                 </div>
-                <div class="row mb-3">
-                  <div class="col">
-                    <div class="form-floating mb-3">
-                      <input type="email" class="form-control" id="floatingEmail" placeholder="email@example.com">
-                      <label for="floatingEmail">Email Address</label>
-                    </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" id="floatingMessage" placeholder="Type your message here"></textarea>
+                    <label for="floatingMessage">How can I help you?</label>
                   </div>
                 </div>
-                <div class="row mb-3">
-                  <div class="col">
-                    <div class="form-floating mb-3">
-                      <textarea class="form-control" id="floatingMessage" placeholder="Type your message here"></textarea>
-                      <label for="floatingMessage">How can I help you?</label>
-                    </div>
-                  </div>
+              </div>
+              <div class="row mb-3">
+                <div class="d-flex flex-column col-6 col-lg-4">
+                  <button type="submit" class="button btn-main">Submit</button>
                 </div>
-                <div class="row mb-3">
-                  <div class="d-flex flex-column col-6 col-lg-4">
-                    <button type="submit" class="form-btn"><strong>Submit</strong></button>
-                  </div>
-                </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
-      </div>
+    </div>
   </section>
 
 <!-- Follow Me -->
@@ -173,13 +172,14 @@
   <!-- Footer -->
   <footer id="footer">
     <div class="container footer-content">
-      <div class="row">
-        <div class="col-12 col-md-5 order-2 order-md-1 d-flex align-items-center justify-content-center py-3">
-          <p>Copyright &copy; 2021 Bryan Palma. All Rights Reserved.</p>
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-12 col-md-4 order-3 order-md-1 d-flex align-items-center justify-content-center py-2 py-md-3">
+          <p class="copyright">Copyright &copy; 2021 Bryan Palma. All Rights Reserved.</p>
         </div>
-        <div class="social col-12 col-md-7 order-1 order-md-2 d-flex align-items-center justify-content-around py-3">
-          <a href="https://www.instagram.com/palmabryan30/" target="_blank"><span class="fab fa-instagram"></span></a>
+        <div class="social col-12 col-md-4 order-2 d-flex align-items-center justify-content-around py-2 py-md-3">
+          <a href="https://www.instagram.com/palmabryan30/" target="_blank"><span class="fab fa-instagram fa-2x"></span></a>
         </div>
+        <div class="col-12 col-md-4 order-1 order-md-3"></div>
       </div>
     </div>
   </footer>

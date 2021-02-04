@@ -1,9 +1,10 @@
 :root {
-  --primary-colour: #00B8CC;
-  --secondary-colour: #1D70A2;
+  --primary-colour: #46A0E4;
+  --secondary-colour: #F2BD0A;
   --light-colour: #E5E7E6;
   --dark-colour: #141301;
-  --gray-colour: #303030;
+  --gray-colour:  #303030;
+  --white-colour: #FCFCFC;
 }
   
 * {
@@ -32,15 +33,11 @@ a, a:hover {
 }
 
 /* Utilities */
-.contain {
-  max-width: 992px;
-  padding: 0 12;
-}
-
 .button {
   text-decoration: none !important;
   cursor: pointer;
   display: inline-block;
+  font-family: 'Panavam', sans-serif;
   padding: 10px 30px;
   border-radius: 2px;
 }
@@ -48,11 +45,13 @@ a, a:hover {
 .btn-main {
   background-color: var(--primary-colour);
   border: 2px solid var(--primary-colour);
-  color: #fff;
+  color: var(--white-colour);
+  text-transform: uppercase;
 }
 
 .btn-main:hover {
-  background-color: var(--light-colour);
+  background-color: var(--secondary-colour);
+  border: 2px solid var(--secondary-colour);
   color: var(--primary-colour);
   transition: all 0.5s;
 }
@@ -69,13 +68,38 @@ a, a:hover {
   transition: all 0.5s;
 }
 
+.headline {
+  color: var(--primary-colour);
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.bottom-line {
+  height: 3px;
+  width: 5em;
+  position: relative;
+  background-color: var(--gray-colour);
+  display: block;
+  margin: 0 auto 2.5em auto;
+}
+
+.bottom-line::before {
+  content: '';
+  height: 9px;
+  width: 5em;
+  position: absolute;
+  background-color: var(--gray-colour);
+  top: -4px;
+  left: 0;
+}
+
 /* Navbar */
 .navbar {
   background-color: var(--primary-colour);
 }
 
 .navbar .nav-item .nav-link {
-  font-family: 'Hind Madurai', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 500;
 }
 
@@ -85,7 +109,7 @@ a, a:hover {
 
 .navbar .navbar-nav .nav-item a,
 .navbar .container-fluid div span a {
-  color: #fff;
+  color: var(--white-colour);
   text-transform: uppercase;
   font-weight:500;
 }
@@ -105,7 +129,7 @@ a, a:hover {
   background-image: url('/img/meghan-holmes-buWcS7G1_28-unsplash.jpg');
   height: 100vh;
   background-attachment: fixed;
-  background-position: top 95px center;
+  background-position: top 69px center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -120,7 +144,7 @@ a, a:hover {
 }
 
 .hero .hero-content {
-  color: #fff;
+  color: var(--white-colour);
   padding-bottom: 25px;
 }
 
@@ -132,7 +156,7 @@ a, a:hover {
 /* Form */
 #contact {
   color: var(--dark-colour);
-  padding-top: 95px;
+  padding-top: 106px;
 }
 
 .b-shadow {
@@ -155,6 +179,11 @@ a, a:hover {
 .form-floating input,
 .form-floating textarea {
   border: 1px solid rgba(20, 19, 1, 0.8);
+}
+
+.form-control:focus {
+  border-color: var(--primary-colour);
+  box-shadow: 0 0 0 0.25rem rgba(71, 161, 228, 0.25);
 }
 
 .form-btn {
@@ -237,8 +266,23 @@ a, a:hover {
   color: var(--light-colour);
 }
 
+.copyright {
+  margin: 0;
+}
+
 #footer a {
   color: var(--light-colour);
+}
+
+#footer a:hover {
+  color: var(--secondary-colour);
+  transition: all 0.5s;
+}
+
+@media(max-width:1080px){
+  .parallax {
+    background-attachment: scroll;
+  }
 }
 
 @media(max-width:768px){
@@ -253,6 +297,10 @@ a, a:hover {
   .parallax {
     background-position: top 79px center;
   }
+
+  .bottom-line {
+    margin-bottom: 0px;
+  }
 }
 
 @media(max-width:576px) {
@@ -265,10 +313,10 @@ a, a:hover {
   }
 
   .parallax {
-    background-position: top 66px center;
+    background-position: top 58px center;
   }
 
   #contact {
-    padding-top: 0;
+    padding-top: 66px;
   }
 }

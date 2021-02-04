@@ -1,9 +1,10 @@
 :root {
-  --primary-colour: #00B8CC;
-  --secondary-colour: #0B8D9C;
+  --primary-colour: #46A0E4;
+  --secondary-colour: #F2BD0A;
   --light-colour: #E5E7E6;
   --dark-colour: #141301;
   --gray-colour:  #303030;
+  --white-colour: #FCFCFC;
 }
   
 * {
@@ -32,11 +33,6 @@ a, a:hover {
 }
 
 /* Utilities */
-.width-control {
-  max-width: 1080px;
-  padding: 0 12;
-}
-
 .button {
   text-decoration: none !important;
   cursor: pointer;
@@ -48,19 +44,20 @@ a, a:hover {
 .btn-main {
   background-color: var(--primary-colour);
   border: 2px solid var(--primary-colour);
-  color: #fff;
+  color: var(--white-colour);
   text-transform: uppercase;
 }
 
 .btn-main:hover {
   background-color: var(--secondary-colour);
   border: 2px solid var(--secondary-colour);
+  color: var(--primary-colour);
   transition: all 0.5s;
 }
 
 .btn-alt {
   background-color: var(--secondary-colour);
-  color: #fff;
+  color: var(--white-colour);
   text-transform: uppercase;
 }
 
@@ -69,7 +66,7 @@ a, a:hover {
 }
 
 .btn-transparent:hover {
-  background-color: #fff;
+  background-color: var(--white-colour);
   color: #000;
   transition: all 0.5s;
 }
@@ -80,14 +77,13 @@ a, a:hover {
   font-size: 3em;
 }
 
-.b-shadow-r {
-  /* box-shadow: 6px -6px var(--gray-colour), 6px 0px var(--gray-colour), 0px -6px var(--gray-colour); */
+.b-shadow {
   border: 6px solid var(--gray-colour);
 }
 
 .bottom-line {
   height: 3px;
-  width: 12em;
+  width: 5em;
   position: relative;
   background-color: var(--gray-colour);
   display: block;
@@ -96,12 +92,12 @@ a, a:hover {
 
 .bottom-line::before {
   content: '';
-  height: 12px;
+  height: 9px;
   width: 5em;
   position: absolute;
-  background-color: var(--primary-colour);
+  background-color: var(--gray-colour);
   top: -4px;
-  left: 30%;
+  left: 0;
 }
 
 /* Navbar */
@@ -116,7 +112,7 @@ a, a:hover {
 
 .navbar .navbar-nav .nav-item a,
 .navbar .container-fluid div span a {
-  color: #fff;
+  color: var(--white-colour);
   text-transform: uppercase;
   font-weight:500;
 }
@@ -135,7 +131,7 @@ a, a:hover {
 
 /* HOME PAGE - Hero */
 .parallax-home {
-  background-image: url('/img/home-hero.jpeg');
+  background-image: url('/img/home-hero-edit.jpg');
   min-height: 100vh;
   background-attachment: fixed;
   background-position: top 35px center;
@@ -145,7 +141,6 @@ a, a:hover {
 
 .hero .container {
   text-align: center;
-  height: calc(100vh - 95px);
 }
 
 .hero .container .row {
@@ -157,7 +152,7 @@ a, a:hover {
 }
 
 .hero .hero-content a {
-  color: var(--primary-colour);
+  color: var(--white-colour);
 }
 
 .hero .hero-content a span:hover {
@@ -168,14 +163,19 @@ a, a:hover {
 /* HOME PAGE - About BPF */
 #about-bpf {
   padding-top: 95px;
+  min-height: 100vh;
+}
+
+.home-content {
+  padding: 0px 50px;
 }
 
 /* ABOUT PAGE */
 .parallax-about {
-  background-image: url('/img/[contact]\ Bry\ outdoor\ stretch.jpeg');
+  background-image: url('/img/about-hero-edit.jpg');
   min-height: 100vh;
   background-attachment: fixed;
-  background-position: top 91px center;
+  background-position: top 69px center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -185,26 +185,7 @@ a, a:hover {
 }
 
 #about-me {
-  padding-top: 91px;
-}
-
-.hello {
-  font-size: 48px;
-}
-
-#credentials .accordion-header .accordion-button {
-  background-color: var(--light-colour);
-  color: var(--primary-colour);
-  font-family: 'Pavanam', sans-serif;
-  font-size: 20px;
-  text-transform: uppercase;
-  border: none;
-  box-shadow: 0em 0.15em 0.65em 0em rgba(0, 0, 0, 0.25);
-}
-
-#credentials .accordion-body {
-  border: none;
-  box-shadow: 0em 0.15em 0.65em 0em rgba(0, 0, 0, 0.25);
+  padding-top: 106px;
 }
 
 /* TRAINING PAGE */
@@ -212,7 +193,7 @@ a, a:hover {
   background-image: url('/img/training-hero-edit.jpg');
   min-height: 100vh;
   background-attachment: fixed;
-  background-position: top 95px center;
+  background-position: top 69px right;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -222,7 +203,7 @@ a, a:hover {
 }
 
 #training {
-  padding-top: 95px;
+  padding-top: 106px;
 }
 
 .offering .card {
@@ -231,7 +212,8 @@ a, a:hover {
   background-color: var(--light-colour);
   color: var(--dark-colour);
   box-shadow: 0em 0.15em 0.65em 0em rgba(0, 0, 0, 0.25);
-  height: 318px;
+  height: 340px;
+  margin-bottom: 15px;
 }
 
 .offering .row {
@@ -240,6 +222,11 @@ a, a:hover {
 
 .offering .row .col {
   margin: 0;
+}
+
+.offering .row .col .offering-icon {
+  max-height: 80px;
+  width: auto;
 }
 
 /* FOOTER */
@@ -263,6 +250,15 @@ a, a:hover {
 }
 
 /* MEDIA QUERIES */
+@media(max-width:1080px){
+  .parallax-about,
+  .parallax-home,
+  .parallax-training {
+    background-attachment: scroll;
+  }
+
+}
+
 @media(max-width:768px){
   #bpf-brand {
     padding: 5px 10px;
@@ -270,10 +266,6 @@ a, a:hover {
 
   #bpf-brand img {
     max-width: 200px;
-  }
-
-  .parallax-about {
-    background-position: top 79px left -200px;
   }
 
   .bottom-line {
@@ -284,20 +276,12 @@ a, a:hover {
     padding: 0;
   }
 
-  .parallax-training {
-    background-position: top 79px right -100px;
+  .parallax-about {
+    background-position: top 58px left;
   }
 
   #training {
     padding-top: 79px;
-  }
-
-  .offering .card {
-    margin-bottom: 15px;
-  }
-
-  .offering .card:nth-child(4) {
-    margin-bottom: 0px;
   }
 
   hr {
@@ -305,8 +289,7 @@ a, a:hover {
   }
 }
 
-
-@media(max-width:576px){
+@media (max-width:576px), (max-height:576px) {
   #bpf-brand {
     padding: 5px;
   }
@@ -315,8 +298,8 @@ a, a:hover {
     max-width: 150px;
   }
 
-  .parallax-about {
-    background-position: top 66px left -150px;
+  .parallax-training {
+    background-position: top 58px right;
   }
 
   #about-me,
@@ -324,13 +307,24 @@ a, a:hover {
     padding-top: 66px;
   }
 
-  .parallax-training {
-    background-position: top 66px right;
+  .offering .card {
+    max-height: 260px;
   }
 
-  #personal-training .offering,
-  #group-training .offering {
-    margin: 0 0 20px 0;
-    padding: 0 6px;
+}
+
+@media (max-width: 576px) {
+  .parallax-about {
+    background-position: top 58px left -150px;;
+  }
+
+  .home-content {
+   margin-bottom: 20px; 
+  }
+}
+
+@media (max-height: 576px) {
+  .parallax-about {
+    background-position: top 58px left;
   }
 }
