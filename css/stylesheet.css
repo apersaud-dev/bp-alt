@@ -85,7 +85,7 @@ a, a:hover {
   height: 3px;
   width: 5em;
   position: relative;
-  background-color: var(--gray-colour);
+  background-color: var(--secondary-colour);
   display: block;
   margin: 0 auto 2.5em auto;
 }
