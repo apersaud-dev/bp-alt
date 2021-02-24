@@ -143,7 +143,7 @@ a, a:hover {
 
 /* HOME PAGE - Hero */
 .parallax-home {
-  background-image: url('/bp-alt/img/home-hero-compressed.jpg');
+  background-image: url('/img/home-hero-compressed.jpg');
   min-height: 100vh;
   background-attachment: fixed;
   background-position: top 35px center;
@@ -185,7 +185,7 @@ a, a:hover {
 
 /* ABOUT PAGE */
 .parallax-about {
-  background-image: url('/bp-alt/img/about-hero-compressed.jpg');
+  background-image: url('/img/about-hero-compressed.jpg');
   min-height: 100vh;
   background-attachment: fixed;
   background-position: top 69px center;
@@ -203,7 +203,7 @@ a, a:hover {
 
 /* TRAINING PAGE */
 .parallax-training {
-  background-image: url('/bp-alt/img/training-hero-compressed.jpg');
+  background-image: url('/img/training-hero-compressed.jpg');
   min-height: 100vh;
   background-attachment: fixed;
   background-position: top 69px right;

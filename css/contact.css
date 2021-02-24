@@ -138,7 +138,7 @@ a, a:hover {
 
 /* Hero Section */
 .parallax {
-  background-image: url('/bp-alt/img/contact-hero-compressed.jpg');
+  background-image: url('/img/contact-hero-compressed.jpg');
   height: 100vh;
   background-attachment: fixed;
   background-position: top 69px center;
@@ -368,7 +368,4 @@ a, a:hover {
     padding-top: 66px;
   }
 
-  /* #thankYou .thanks-header {
-    font-size: 2em;
-  } */
 }
