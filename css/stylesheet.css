@@ -105,6 +105,18 @@ a, a:hover {
   background-color: var(--primary-colour);
 }
 
+.bpf-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.5s;
+}
+
+.navbar #bpf-brand:hover .bpf-img {
+  transform: scale(1.06); 
+  transition: all 0.5s;
+}
+
 .navbar .nav-item .nav-link {
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
@@ -131,12 +143,13 @@ a, a:hover {
 
 /* HOME PAGE - Hero */
 .parallax-home {
-  background-image: url('/img/home-hero-edit.jpg');
+  background-image: url('/bp-alt/img/home-hero-compressed.jpg');
   min-height: 100vh;
   background-attachment: fixed;
   background-position: top 35px center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -1;
 }
 
 .hero .container {
@@ -172,7 +185,7 @@ a, a:hover {
 
 /* ABOUT PAGE */
 .parallax-about {
-  background-image: url('/img/about-hero-edit.jpg');
+  background-image: url('/bp-alt/img/about-hero-compressed.jpg');
   min-height: 100vh;
   background-attachment: fixed;
   background-position: top 69px center;
@@ -190,7 +203,7 @@ a, a:hover {
 
 /* TRAINING PAGE */
 .parallax-training {
-  background-image: url('/img/training-hero-edit.jpg');
+  background-image: url('/bp-alt/img/training-hero-compressed.jpg');
   min-height: 100vh;
   background-attachment: fixed;
   background-position: top 69px right;

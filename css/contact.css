@@ -98,6 +98,18 @@ a, a:hover {
   background-color: var(--primary-colour);
 }
 
+.bpf-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.5s;
+}
+
+.navbar #bpf-brand:hover .bpf-img {
+  transform: scale(1.06); 
+  transition: all 0.5s;
+}
+
 .navbar .nav-item .nav-link {
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
@@ -126,7 +138,7 @@ a, a:hover {
 
 /* Hero Section */
 .parallax {
-  background-image: url('/img/meghan-holmes-buWcS7G1_28-unsplash.jpg');
+  background-image: url('/bp-alt/img/contact-hero-compressed.jpg');
   height: 100vh;
   background-attachment: fixed;
   background-position: top 69px center;
