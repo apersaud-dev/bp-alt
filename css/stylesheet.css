@@ -206,7 +206,7 @@ a, a:hover {
   background-image: url('/img/training-hero-compressed.jpg');
   min-height: 100vh;
   background-attachment: fixed;
-  background-position: top 69px right;
+  background-position: top 69px center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -242,6 +242,145 @@ a, a:hover {
   width: auto;
 }
 
+/* CONTACT PAGE */
+.parallax-contact {
+  background-image: url('/img/contact-hero-compressed.jpg');
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: top 60px center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero .container {
+  text-align: center;
+  height: 100%;
+}
+
+.hero .container .row {
+  height: 100%;
+}
+
+.hero .hero-content {
+  color: var(--white-colour);
+  padding-bottom: 25px;
+}
+
+.hero .hero-content a span:hover {
+  transform: translateY(10px);
+  transition: 0.5s;
+}
+
+/* CONTACT FORM */
+#contact {
+  color: var(--dark-colour);
+  padding-top: 106px;
+}
+
+.b-shadow {
+  box-shadow: -6px -6px var(--gray-colour), -6px 0px var(--gray-colour), 0px -6px var(--gray-colour);
+}
+
+#contact h2 {
+  font-size: 1.75em;
+  padding: 20px 0;
+}
+
+.form-floating label {
+  font-family: 'Pavanam', sans-serif; 
+}
+
+.form-floating #floatingMessage {
+  height: 200px;
+}
+
+.form-floating input,
+.form-floating textarea {
+  border: 1px solid rgba(20, 19, 1, 0.8);
+}
+
+.form-control:focus {
+  border-color: var(--primary-colour);
+  box-shadow: 0 0 0 0.25rem rgba(71, 161, 228, 0.25);
+}
+
+.badBad {
+  display: none;
+}
+
+.form-btn {
+  text-decoration: none !important;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Pavanam', sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(20, 19, 1, 0.8);
+  background-color: var(--light-colour);
+  color: var(--dark-colour);
+}
+
+.form-btn:hover {
+  background-color: var(--primary-colour);
+  transition: all 0.5s;
+}
+
+/* CONTACT FOLLOW */
+.social-callout {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 2.5em;;
+  text-transform: uppercase;
+  color: var(--primary-colour);
+}
+
+.sm-post {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.sm-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0,0,0,0.4)
+}
+
+.sm-post:hover .sm-image {
+  transform: scale(1.08); 
+  transition: all 0.5s;
+}
+
+.sm-post:hover .overlay {
+  opacity: 1;
+}
+
+.sm-text {
+  color: #fff;
+  position: absolute;
+  bottom: 35%;
+  left: 50%;
+  transform: translate(-35%, -50%);
+  transition: all 0.5s;
+}
+
 /* FOOTER */
 #footer {
   background: var(--primary-colour);
@@ -262,14 +401,36 @@ a, a:hover {
   transition: all 0.5s;
 }
 
+/* THANK YOU PAGE */
+#thankYou {
+  height: 100vh;
+  padding-top: 69px;
+}
+
+#thankYou .container div {
+  width: 100%;
+  height: 100%;
+}
+
+#thankYou .thanks-content {
+  text-align: center;
+  padding-top: 25vh;
+}
+
+#thankYou .thanks-header {
+  color: var(--primary-colour);
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
 /* MEDIA QUERIES */
 @media(max-width:1080px){
   .parallax-about,
   .parallax-home,
-  .parallax-training {
+  .parallax-training,
+  .parallax-contact {
     background-attachment: scroll;
   }
-
 }
 
 @media(max-width:768px){
@@ -285,12 +446,25 @@ a, a:hover {
     margin-bottom: 25px;
   }
 
+  #contact .bottom-line {
+    margin-bottom: 0px;
+  }
+
   #about-me .container > .row {
     padding: 0;
   }
 
+  .parallax-home, 
+  .parallax-training {
+    background-position: center center;
+  }
+
   .parallax-about {
-    background-position: top 58px left;
+    background-position: top 30px center;
+  }
+
+  .parallax-contact {
+    background-position: top 45px center;
   }
 
   #training {
@@ -300,20 +474,28 @@ a, a:hover {
   hr {
     margin: 30px 0 16px 0;
   }
+
+  #thankYou .thanks-content {
+    padding-top: 50px;
+  }
+
+  #thankYou .thanks-header {
+    font-size: 2em;
+  }
 }
 
 @media (max-width:576px), (max-height:576px) {
-  #bpf-brand {
+  .navbar {
+    padding: 1px 0px;
+  }
+  
+  /* #bpf-brand {
     padding: 5px;
   }
 
   #bpf-brand img {
     max-width: 150px;
-  }
-
-  .parallax-training {
-    background-position: top 58px right;
-  }
+  } */
 
   #about-me,
   #training {
@@ -327,17 +509,40 @@ a, a:hover {
 }
 
 @media (max-width: 576px) {
+  .parallax-home {
+    background: url('/img/home-hero-576.jpg');
+    background-position: top center;
+    background-size: cover;
+  }
+
   .parallax-about {
-    background-position: top 58px left -150px;;
+    background: url('/img/about-hero-576.jpg');
+    background-position: top 35px center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .parallax-training {
+    background: url('/img/training-hero-576.jpg');
+    background-position: top 45px center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .parallax-contact {
+    background: url('/img/contact-hero-576.jpg');
+    background-position: top 25px center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .home-content {
    margin-bottom: 20px; 
   }
-}
 
-@media (max-height: 576px) {
-  .parallax-about {
-    background-position: top 58px left;
+  #contact,
+  #thankYou {
+    padding-top: 66px;
   }
 }
+
