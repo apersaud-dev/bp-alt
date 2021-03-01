@@ -109,12 +109,6 @@ a, a:hover {
   display: block;
   width: 100%;
   height: auto;
-  transition: all 0.5s;
-}
-
-.navbar #bpf-brand:hover .bpf-img {
-  transform: scale(1.06); 
-  transition: all 0.5s;
 }
 
 .navbar .nav-item .nav-link {
