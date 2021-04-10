@@ -140,7 +140,7 @@ a, a:hover {
 
 /* HOME PAGE - Hero */
 .parallax-home {
-  background-image: url('/img/home-hero-compressed.jpg');
+  background-image: url('../img/home-hero-compressed.jpg');
   min-height: 100vh;
   background-attachment: fixed;
   background-position: top 35px center;
@@ -182,7 +182,7 @@ a, a:hover {
 
 /* ABOUT PAGE */
 .parallax-about {
-  background-image: url('/img/about-hero-compressed.jpg');
+  background-image: url('../img/about-hero-compressed.jpg');
   min-height: 100vh;
   background-attachment: fixed;
   background-position: top 69px center;
@@ -200,7 +200,7 @@ a, a:hover {
 
 /* TRAINING PAGE */
 .parallax-training {
-  background-image: url('/img/training-hero-compressed.jpg');
+  background-image: url('../img/training-hero-compressed.jpg');
   min-height: 100vh;
   background-attachment: fixed;
   background-position: top 69px center;
@@ -241,7 +241,7 @@ a, a:hover {
 
 /* CONTACT PAGE */
 .parallax-contact {
-  background-image: url('/img/contact-hero-compressed.jpg');
+  background-image: url('../img/contact-hero-compressed.jpg');
   height: 100vh;
   background-attachment: fixed;
   background-position: top 60px center;
@@ -385,6 +385,10 @@ a, a:hover {
   color: var(--light-colour);
 }
 
+#footer .footer-content .row > div {
+  margin: 10px auto;
+}
+
 .copyright {
   margin: 0;
 }
@@ -396,6 +400,10 @@ a, a:hover {
 #footer a:hover {
   color: var(--secondary-colour);
   transition: all 0.5s;
+}
+
+#footer .privacy-policy {
+  text-align: center;
 }
 
 /* THANK YOU PAGE */
@@ -485,14 +493,6 @@ a, a:hover {
   .navbar {
     padding: 1px 0px;
   }
-  
-  /* #bpf-brand {
-    padding: 5px;
-  }
-
-  #bpf-brand img {
-    max-width: 150px;
-  } */
 
   #about-me,
   #training {
@@ -507,27 +507,27 @@ a, a:hover {
 
 @media (max-width: 576px) {
   .parallax-home {
-    background: url('/img/home-hero-576.jpg');
+    background: url('../img/home-hero-576.jpg');
     background-position: top center;
     background-size: cover;
   }
 
   .parallax-about {
-    background: url('/img/about-hero-576.jpg');
+    background: url('../img/about-hero-576.jpg');
     background-position: top 35px center;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   .parallax-training {
-    background: url('/img/training-hero-576.jpg');
+    background: url('../img/training-hero-576.jpg');
     background-position: top 45px center;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   .parallax-contact {
-    background: url('/img/contact-hero-576.jpg');
+    background: url('../img/contact-hero-576.jpg');
     background-position: top 25px center;
     background-size: cover;
     background-repeat: no-repeat;
