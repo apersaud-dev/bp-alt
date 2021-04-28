@@ -173,11 +173,36 @@ a, a:hover {
 /* HOME PAGE - About BPF */
 #about-bpf {
   padding-top: 95px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .home-content {
   padding: 0px 50px;
+}
+
+/* HOME PAGE - Testimonials */
+#testimonials {
+  background-color: #F4F5F5;
+}
+
+.testimonial__left,
+.testimonial__right {
+   margin-bottom: 2rem;
+}
+
+.testimonial__divider {
+  display: none;
+}
+
+.quote {
+  font-family: 'Hind Vadodara', sans-serif;
+  font-weight: 400;
+}
+
+.caption {
+  font-family: 'Hind Vadodara', sans-serif;
+  font-weight: 600;
+  font-style: italic;
 }
 
 /* ABOUT PAGE */
@@ -471,6 +496,20 @@ a, a:hover {
   .parallax-contact {
     background-position: top 45px center;
   }
+
+  .testimonial__left,
+  .testimonial__right {
+    padding: 0 50px;
+  }
+
+  .testimonial__divider {
+    display: block;
+    border: none;
+    width: 69%;
+    height: 5px;
+    margin-bottom: 3rem;
+    background-color: var(--primary-colour);
+    }
 
   #training {
     padding-top: 79px;
