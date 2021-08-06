@@ -1,0 +1,21 @@
+.hero {
+
+    &__parallax {
+        min-height: 100vh;
+        background-attachment: fixed;
+        background-position: top 35px center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+
+        &--home {
+            background-image: url('./../../assets/images/');
+        }
+    }
+
+    &__container {
+        text-align: center;
+    }
+
+    
+}
