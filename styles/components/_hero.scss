@@ -1,3 +1,6 @@
+@use './../abstracts/variables' as *;
+@use './../abstracts/mixins' as *;
+
 .hero {
 
     &__parallax {
@@ -9,13 +12,35 @@
         z-index: -1;
 
         &--home {
-            background-image: url('./../../assets/images/');
+            background-image: url('./../../assets/images/home-hero-small-bw.jpg');
+
+            @include medium-breakpoint {
+                background: url('./../../assets/images/home-hero-compressed-bw.jpg') left -24rem top;
+            }
+
+            @include large-breakpoint {
+                background-position: left top;
+            }
         }
     }
 
     &__container {
-        text-align: center;
+        height: 100%;
     }
 
-    
+    &__content {
+        height: 100%;
+        text-align: center;
+        // padding-bottom: 2rem;
+    }
+
+    &__link {
+        color: $white;
+
+        &:hover .hero__icon {
+            transform: translateY(1rem);
+            color: $primary;
+            transition: 0.5s;
+        }
+    }
 }

@@ -1,0 +1,26 @@
+@use './../abstracts/variables' as *;
+@use './../abstracts/mixins' as *;
+
+.footer {
+    
+    &__content {
+        @include max-size;
+    }
+
+
+    &__copyright {
+        @include headline5;
+        text-transform: uppercase;
+        color: $white;
+        height: 2rem;
+    }
+
+    &__icon {
+        color: $white;
+    }
+
+    &__policy {
+        height: 2rem;
+    }
+
+}
