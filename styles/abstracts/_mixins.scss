@@ -24,7 +24,8 @@
 }
 
 @mixin headline2 {
-    font: 500 3.4375rem $oswald;
+    // font: 500 3.4375rem $oswald;
+    font: 400 3.4375rem $oswald;
     letter-spacing: -0.5px;
 }
 

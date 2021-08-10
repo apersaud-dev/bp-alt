@@ -18,7 +18,11 @@
             align-items: flex-end;
         }
         
-        @include max-size;
+        @include large-breakpoint {
+            @include max-size;
+            justify-content: space-between;
+        }
+        
     }
 
 

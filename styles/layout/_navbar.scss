@@ -1,149 +1,32 @@
 @use './../abstracts/variables' as *;
 @use './../abstracts/mixins' as *;
 
-// .navbar {
-//     background-color: $primary;
-//     width: 100%;
-//     display: flex;
-//     position: fixed;
-//     // padding: 0.25rem 0.5rem;
-//     z-index: 100;
-
-//     &__brand {
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: flex-end;
-//         margin: 1rem;
-//     }
-
-//     &__logo {
-//         max-width: 200px;
-//         grid-column: 1/6;
-//     }
-
-//     &__menu-wrapper {
-//         width: 36px;
-//         grid-column: 1/6;
-
-//         &:hover .navbar__svg {
-//             fill: $secondary;
-//             transition: all 0.5s;
-//         }
-//     }
-
-//     &__svg {
-//         fill: $white;
-
-//         @include medium-breakpoint {
-//             display: none;
-//         }
-
-//         &--menu {
-//             width: 48px;
-//         }
-
-//         &--hide {
-//             display: none;
-//         }
-//     }
-
-//     &__menu {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         transition: all 0.5s;
-
-//         @include medium-breakpoint {
-//             flex-direction: row;
-//         }
-
-
-//         &--hide {
-//             display: none;
-//         }
-
-//     }
-
-//     // &__menu-icon {
-//     //     max-width: 100%;
-//     //     height: auto;
-
-//     //     &:hover {
-//     //         fill: red;
-//     //     }
-//     // }
-
-
-//     &__menu-item {
-//         margin: 0.5rem;
-//     }
-
-//     &__link {
-//         @include headline6;
-//         color: $white;
-//         text-transform: uppercase;
-
-//         &:hover {
-//             color: $secondary;
-//             transition: all 0.5s;
-//         }
-//     }
-// }
-
-// .menu-symbol {
-//     background: none;
-//     border: none;
-    
-//     // @include medium-breakpoint {
-//     //     display: none;
-//     // }
-
-//     &__top-line {
-//         width: 25px;
-//         height: 3px;
-//         background-color: $white;
-//         margin: 5px;
-//     } 
-
-//     &__middle-line {
-//         @extend .menu-symbol__top-line;
-//     }
-
-//     &__bottom-line {
-//         @extend .menu-symbol__top-line;
-//     }
-// }
-
-// https://github.com/bedimcode/responsive-navigation-menubar
-
-.bd-grid {
-    max-width: 1024px;
-    display: grid;
-    grid-template-columns: 100%;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-
-    @include large-breakpoint {
-        margin: 0 auto;
-    }
-}
-
-
-
 .header {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    padding: 0.5rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     background: $primary;
     z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     @include medium-breakpoint {
         height: calc(74px + 1rem);
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @include medium-breakpoint {
+            flex-direction: row;
+        }
+
+        @include large-breakpoint {
+            @include max-size;
+        }
     }
 
     &__logo-image {
@@ -151,6 +34,9 @@
     }
 
     &__toggle {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
         width: 3rem;
         background: none;
         border: none;
@@ -180,43 +66,34 @@
     color: $white;
     width: 100%;
     height: 100vh;
-    padding: 1.25rem 0;
+    padding: 5rem 0 1.25rem 3rem;
     transition: 0.5s;
 
     @include medium-breakpoint {
-        width: 100%;
         position: relative;
-        background-color: none;;
+        width: 40%;
+        height: 80px;
+        top: 0;
+        left: 0;
+        padding: 1.25rem 0 0 0;
+        background: none;
     }
 
-    &__content {
-        height: 100%;
-        grid-template-rows: max-content 1fr max-content;
-        row-gap: 2rem;
-        padding-left: 2rem;
-
-        @include medium-breakpoint {
-            grid-template-columns: repeat (3, max-content);
-            grid-template-rows: 1fr;
-            column-gap: 1rem;
-            justify-content: space-between;
-        }
+    @include large-breakpoint {
+        width: 30%;
     }
 
     &__close {
         position: absolute;
+        top: 1.5rem;
         right: 1.5rem;
-        width: 36px;
-        height: 36px;
-        // padding: 0.25rem;
+        width: 3rem;
         background: none;
         border: none;
-        cursor: pointer;
-        transition: all 0.5s;
 
         &:hover .nav__close-svg {
             fill: $secondary;
-            transition: all 0.5s;;
+            transition: all 0.5s;
         }
 
         @include medium-breakpoint {
@@ -228,23 +105,26 @@
         fill: $white;
     }
 
-    &__menu {
-        align-self: center;
-        // background-color: red;
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        @include medium-breakpoint {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
     &__list {
-        @include medium-breakpoint {
-            display: flex;    
-        }
-        
-    }
-
-    &__list-item {
-        margin: 2.5rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
 
         @include medium-breakpoint {
-            margin: 0 0.25rem;
+            flex-direction: row;
+            margin-bottom: 0; 
         }
     }
 
@@ -252,6 +132,7 @@
         @include headline6;
         color: $white;
         text-transform: uppercase;
+        cursor: pointer;
         transition: all 0.5s;
 
         &:hover {
@@ -262,31 +143,22 @@
         &--active {
             color: $secondary;
         }
-
-        @include medium-breakpoint {
-            padding: 0.5rem 0.8rem;
-        }
-    }
-
-    &__social {
-        padding-top: 0.5rem;
     }
 
     &__social-link {
         color: $white;
-        transition: all 0.5s;
+        cursor: pointer;
 
         &:hover {
             color: $secondary;
-            transition: all 0.5s;;
+            transition: all 0.5s;
         }
-    }
-
-    &__social-icon {
-        width: 2rem;
     }
 }
 
 .show {
     left: 0;
 }
+
+
+// https://github.com/bedimcode/responsive-navigation-menubar

@@ -1,15 +1,7 @@
 @use './../abstracts/variables' as *;
 @use './../abstracts/mixins' as *;
 
-.section {
-    background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color:#282828;
-    background-size:16px 16px;
-}
-
 .home {
-    // background-color: #e5e7e6;
-    // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23303030' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     background: $white;
     padding: 1rem;
     padding-top: 98px;
@@ -19,10 +11,6 @@
     }
 
     &__about {
-        // display: grid;
-        // grid-template-columns: 1fr 1fr;
-        // grid-template-rows: 
-        // gap: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -41,7 +29,6 @@
     &__content {
         order: 2;
         padding: 0 0.5rem;
-        // position: relative;
         max-width: 500px;
 
         @include medium-breakpoint {
@@ -77,8 +64,6 @@
             transition: all 0.5s;
         }
     }
-
-
 
     &__image-wrapper {
         order: 1;
@@ -127,11 +112,7 @@
     padding: 1rem;
 
     @include medium-breakpoint {
-        padding: 98px 2rem 2rem 2rem;
-    }
-
-    &__container {
-
+        padding: 2rem;
     }
 
     &__headline {
@@ -153,10 +134,19 @@
         @include medium-breakpoint {
             flex-direction: row;
         }
+
+        @include large-breakpoint {
+            @include max-size;
+        }
     }
 
     &__left {
-        margin-bottom: 1.5rem;
+        max-width: 500px;
+        margin: 0 auto 1.5rem auto;
+
+        @include medium-breakpoint {
+            max-width: 40%;
+        }
     }
 
     &__right {
@@ -173,10 +163,12 @@
         font-style: italic;
         margin-left: 1rem;
     }
-
 }
 
 
+
+    // background-color: #e5e7e6;
+    // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23303030' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 
 // https://www.smashingmagazine.com/2021/03/svg-generators/
 
