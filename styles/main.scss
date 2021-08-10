@@ -1,7 +1,18 @@
-@use './base/reset';
+// abstracts 
+@import './base/reset';
 
-@use './components/hero';
+// vendors
 
-@use './layout/footer';
+// base styles
+@import './base/reset';
+@import './base/typography';
 
-@use './pages/home';
+// layout styles
+@import './layout/navbar';
+@import './layout/footer';
+
+// component styles
+@import './components/hero';
+
+// page styles
+@import './pages/home';
