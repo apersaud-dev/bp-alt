@@ -15,7 +15,7 @@
         @include medium-breakpoint {
             flex-direction: row;
             justify-content: space-around;
-            align-items: center;
+            align-items: flex-end;
         }
         
         @include max-size;
@@ -26,15 +26,36 @@
         @include headline5;
         text-transform: uppercase;
         color: $white;
-        height: 2rem;
         margin-bottom: 1rem;
+
+        @include medium-breakpoint {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        &:hover .footer__icon {
+            color: $secondary;
+            transition: all 0.5s;
+        }
     }
 
     &__icon {
         color: $white;
         margin-bottom: 1rem;
+        transition: all 0.5s;
+
+        @include medium-breakpoint {
+            margin-bottom: 0;
+        }
     }
 
-    // &__policy { }
+    &__policy { 
+        margin-left: 0.5rem;
+
+        @include medium-breakpoint {
+            margin-left: 0;
+        }
+    }
 
 }

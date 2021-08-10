@@ -75,7 +75,8 @@
     color: $white;
     background-color: $primary;
     padding: 0.75rem 1rem;
-    // margin-top: 1.5rem;
+    border-radius: 1.25rem;
+    margin-top: 1rem;
     transition: color 0.5s;
 
     &:hover {
@@ -83,4 +84,18 @@
         // color: $primary;
         transition: all 0.5s;
     }
+}
+
+@mixin caption {
+    font: 600 0.875rem $open-sans;
+    letter-spacing: 0.4px;;
+}
+
+@mixin bottom-line {
+    height: 5px;
+    width: 5em;
+    position: relative;
+    background-color: $secondary;
+    display: block;
+    margin: 0 auto 2.5em auto;
 }

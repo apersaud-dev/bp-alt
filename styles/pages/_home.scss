@@ -14,11 +14,40 @@
     padding: 1rem;
     padding-top: 98px;
 
+    @include medium-breakpoint {
+        padding: 98px 2rem 2rem 2rem;
+    }
+
     &__about {
-        display: grid;
+        // display: grid;
         // grid-template-columns: 1fr 1fr;
         // grid-template-rows: 
-        gap: 1rem;
+        // gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include medium-breakpoint {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include large-breakpoint {
+            @include max-size;
+        }
+    }
+
+    &__content {
+        order: 2;
+        padding: 0 0.5rem;
+        // position: relative;
+        max-width: 500px;
+
+        @include medium-breakpoint {
+            order: 1;
+            max-width: 45%;
+        }
     }
 
     &__headline {
@@ -49,15 +78,22 @@
         }
     }
 
-    &__content {
-        order: 2;
-        position: relative;
+
+
+    &__image-wrapper {
+        order: 1;
+        max-width: 500px;
 
         @include medium-breakpoint {
-            order: 1;
+            order: 2;
+            max-width: 45%;
         }
 
-        // &::before {
+        @include large-breakpoint {
+            max-width: 540px;
+        }
+
+            // &::before {
         //     @include medium-breakpoint {
         //     content: '';
         //     position: absolute;
@@ -73,26 +109,71 @@
         // }
     }
 
-    &__image-wrapper {
-        order: 1;
-
-        @include medium-breakpoint {
-            order: 2;
-        }
-    }
-
    &__image {
         position: relative;
         border-radius: 3rem;
         border: 5px solid $white;
         max-width: 100%;
-        // max-width: 500px;
         height: auto;
+        margin-bottom: 1.5rem;
 
         // background-color: #e5e7e6;
         // background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2346a0e4' fill-opacity='0.4' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
        }
    
+}
+
+.testimonials {
+    padding: 1rem;
+
+    @include medium-breakpoint {
+        padding: 98px 2rem 2rem 2rem;
+    }
+
+    &__container {
+
+    }
+
+    &__headline {
+        @include headline2;
+        color: $primary;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__bottom-line {
+        @include bottom-line;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0.5rem;
+
+        @include medium-breakpoint {
+            flex-direction: row;
+        }
+    }
+
+    &__left {
+        margin-bottom: 1.5rem;
+    }
+
+    &__right {
+        @extend .testimonials__left;
+    }
+
+    &__quote {
+        @include body2;
+        margin-bottom: 0.5rem;
+    }
+
+    &__caption {
+        @include caption;
+        font-style: italic;
+        margin-left: 1rem;
+    }
+
 }
 
 

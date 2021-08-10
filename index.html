@@ -48,70 +48,93 @@
 <body>
   
 <!-- Navbar -->
-<!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-  <div class="container-fluid">
-    <a id="bpf-brand" class="navbar-brand" href="./index.html">
-      <img src="./img/bp-logo.png" alt="" class="bpf-img">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="./about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./training.html">Training</a>
-        </li>
-        <li class="nav-item">
-          <a href="./contact.html" class="nav-link">Contact</a>
-        </li>
-      </ul>
-      <span class="navbar-text pe-5 ps-3">
-        <a href="https://www.instagram.com/bryanpalmafitness/" target="_blank"><span class="fab fa-instagram"></span></a>
-      </span>
-    </div>
-  </div>
-</nav> -->
 
-<nav class="navbar">
-  <div class="navbar__brand">
-    <img src="./assets/logos/bp-logo.png" alt="Bryan Palma Fitness" class="navbar__logo" />
-    <div class="navbar__icon-wrapper">
-      <?xml version="1.0" encoding="utf-8"?>
-      <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="navbar__svg--menu">
+<!-- <header>
+  <nav class="navbar" aria-label="Main">
+    <div class="navbar__brand">
+      <img src="./assets/logos/bp-logo.png" alt="Bryan Palma Fitness" class="navbar__logo" />
+      <div id="navbar-button" class="navbar__menu-wrapper">
+        <?xml version="1.0" encoding="utf-8"?>
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" id="navbar-menu-icon" class="navbar__svg--menu">
+          <path d="M43,15H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,14.1,44.1,15,43,15z" class="navbar__svg"/>
+          <path d="M43,27H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,26.1,44.1,27,43,27z" class="navbar__svg"/>
+          <path d="M43,39H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,38.1,44.1,39,43,39z" 
+          class="navbar__svg"/>
+        </svg>
+        <svg viewBox="7.1 7.042 33.951 33.942" xmlns="http://www.w3.org/2000/svg" id="navbar-close-icon" class="navbar__svg--hide">
+          <path d="M43,15H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,14.1,44.1,15,43,15z" transform="matrix(0.707107, -0.707107, 0.707107, 0.707107, -1.374667, 32.498714)" class="navbar__svg"/>
+          <path d="M 43.071 27.013 L 5.071 27.013 C 3.971 27.013 3.071 26.113 3.071 25.013 L 3.071 23.013 C 3.071 21.913 3.971 21.013 5.071 21.013 L 43.071 21.013 C 44.171 21.013 45.071 21.913 45.071 23.013 L 45.071 25.013 C 45.071 26.113 44.171 27.013 43.071 27.013 Z" class="navbar__svg" transform="matrix(0.707108, 0.707106, -0.707106, 0.707108, 24.029942, -9.987522)"/>
+        </svg>
+      </div>
+    </div>
+    <button class="menu-symbol" aria-expanded="false" aria-label="Menu">
+      <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" id="navbar-menu-icon" class="navbar__svg--menu">
         <path d="M43,15H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,14.1,44.1,15,43,15z" class="navbar__svg"/>
         <path d="M43,27H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,26.1,44.1,27,43,27z" class="navbar__svg"/>
         <path d="M43,39H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,38.1,44.1,39,43,39z" 
         class="navbar__svg"/>
       </svg>
-      <svg viewBox="7.1 7.042 33.951 33.942" xmlns="http://www.w3.org/2000/svg" class="navbar__svg--close">
-        <path d="M43,15H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,14.1,44.1,15,43,15z" transform="matrix(0.707107, -0.707107, 0.707107, 0.707107, -1.374667, 32.498714)" class="navbar__svg"/>
-        <path d="M 43.071 27.013 L 5.071 27.013 C 3.971 27.013 3.071 26.113 3.071 25.013 L 3.071 23.013 C 3.071 21.913 3.971 21.013 5.071 21.013 L 43.071 21.013 C 44.171 21.013 45.071 21.913 45.071 23.013 L 45.071 25.013 C 45.071 26.113 44.171 27.013 43.071 27.013 Z" class="navbar__svg" transform="matrix(0.707108, 0.707106, -0.707106, 0.707108, 24.029942, -9.987522)"/>
-      </svg>
-    </div>
-  </div>
-  <div>
-    <ul class="navbar__menu">
-      <li class="navbar__menu-item">
-        <a href="./about.html" class="navbar__link">About</a>
-      </li>
-      <li class="navbar__menu-item">  
-        <a href="./training.html" class="navbar__link">Training</a>
-      </li>
-      <li class="navbar__menu-item">
-        <a href="./contact.html" class="navbar__link">Contact</a>
-      </li>
-      <li class="navbar__menu-item">
-        <a href="" target="_blank" class="navbar__link">
-          <span class="fab fa-instagram navbar__icon">TEST</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    </button>
+      <ul id="navbar-menu" class="navbar__menu">
+        <li class="navbar__menu-item">
+          <a href="./about.html" class="navbar__link">About</a>
+        </li>
+        <li class="navbar__menu-item">  
+          <a href="./training.html" class="navbar__link">Training</a>
+        </li>
+        <li class="navbar__menu-item">
+          <a href="./contact.html" class="navbar__link">Contact</a>
+        </li>
+        <li class="navbar__menu-item">
+          <a href="" target="_blank" class="navbar__link">
+            <span class="fab fa-instagram navbar__icon"></span>
+          </a>
+        </li>
+      </ul>
+  </nav>
+</header> -->
 
+<header class="header">
+  <a href="./index.html" class="header__logo">
+    <img src="./assets/logos/bp-logo.png" alt="Bryan Palma Fitness" class="header__logo-image">
+  </a>
+
+  <button class="header__toggle" id="nav-toggle">
+    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+    <path d="M43,15H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,14.1,44.1,15,43,15z" class="header__menu-svg"/>
+    <path d="M43,27H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,26.1,44.1,27,43,27z" class="header__menu-svg"/>
+    <path d="M43,39H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,38.1,44.1,39,43,39z" 
+    class="header__menu-svg"/>
+  </svg>
+</button>
+
+  <nav class="nav" id="nav-menu">
+    <div class="nav__content bd-grid">
+      
+      <button class="nav__close" id="nav-close">
+        <svg viewBox="7.1 7.042 33.951 33.942" xmlns="http://www.w3.org/2000/svg">
+          <path d="M43,15H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,14.1,44.1,15,43,15z" transform="matrix(0.707107, -0.707107, 0.707107, 0.707107, -1.374667, 32.498714)" class="nav__close-svg"/>
+          <path d="M 43.071 27.013 L 5.071 27.013 C 3.971 27.013 3.071 26.113 3.071 25.013 L 3.071 23.013 C 3.071 21.913 3.971 21.013 5.071 21.013 L 43.071 21.013 C 44.171 21.013 45.071 21.913 45.071 23.013 L 45.071 25.013 C 45.071 26.113 44.171 27.013 43.071 27.013 Z" class="nav__close-svg" transform="matrix(0.707108, 0.707106, -0.707106, 0.707108, 24.029942, -9.987522)"/>
+        </svg>
+      </button>
+
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__list-item"><a href="#" class="nav__link">Training</a></li>
+          <li class="nav__list-item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__social">
+        <a href="" target="_blank" class="nav__social-link">
+          <span class="fab fa-instagram fa-2x nav__social-icon"></span>
+        </a>
+      </div>
+
+    </div>
+  </nav>
+</header>
 
 <main>
   <!-- Hero -->
@@ -144,21 +167,21 @@
   </section>
 
   <!-- Testimonials -->
-  <section id="testimonials">
-    <div class="container py-5 mt-5">
-      <h1 class="headline text-center">Testimonials</h1>
-      <div class="bottom-line"></div>
-      <div class="row justify-content-evenly">
-        <div class="col-12 col-md-5 pt-3 pt-md-0 testimonial__left">
-          <p class="quote">"Bryan is always patient and takes the time to focus on developing the correct form for each exercise, where he can spot and point out small adjustments that makes a big difference.</p>
-          <p class="quote">Even after a year, I look forward to Bryan's personalized sessions and his encouraging attitude keeps me motivated."</p>
-          <p class="caption">- Yolande C.</p>
+  <section id="testimonials" class="testimonials">
+    <div class="testimonials__container">
+      <h1 class="testimonials__headline">Testimonials</h1>
+      <div class="testimonials__bottom-line"></div>
+      <div class="testimonials__wrapper">
+        <div class="testimonials__left">
+          <p class="testimonials__quote">"Bryan is always patient and takes the time to focus on developing the correct form for each exercise, where he can spot and point out small adjustments that makes a big difference.</p>
+          <p class="testimonials__quote">Even after a year, I look forward to Bryan's personalized sessions and his encouraging attitude keeps me motivated."</p>
+          <p class="testimonials__caption">- Yolande C.</p>
         </div>
         <!-- <div class="testimonial__divider"></div> -->
-        <div class="col-12 col-md-5 testimonial__right">
-          <p class="quote">"Through his personalized programs, he is always challenging me to push myself - and I've gotten stronger and can really see the difference it's making.</p>
-          <p class="quote">Most importantly, I've gained confidence as fitness has gone from being intimidating to enjoyable."</p>
-          <p class="caption">- Tiffany H.</p>
+        <div class="testimonials__right">
+          <p class="testimonials__quote">"Through his personalized programs, he is always challenging me to push myself - and I've gotten stronger and can really see the difference it's making.</p>
+          <p class="testimonials__quote">Most importantly, I've gained confidence as fitness has gone from being intimidating to enjoyable."</p>
+          <p class="testimonials__caption">- Tiffany H.</p>
         </div>
       </div>
     </div>
@@ -168,22 +191,20 @@
   <!-- Footer -->
   <footer id="footer" class="footer">
     <div class="px-3 footer__content">
-      <!-- <div class="row d-flex align-items-center justify-content-center py-1 py-md-3 py-lg-4"> -->
-        <div class="col-12 col-md-4 order-2 order-md-1 d-flex align-items-center justify-content-center my-2 my-md-0 footer__copyright">
-          <p class="copyright">Bryan Palma 2021 &copy;</p>
-        </div>
-        <div class="social col-12 col-md-4 order-1 d-flex align-items-center justify-content-around my-2 my-md-0">
-          <a href="https://www.instagram.com/bryanpalmafitness/" target="_blank"><span class="fab fa-instagram fa-2x footer__icon"></span></a>
-        </div>
-        <div class="col-12 col-md-4 order-3 d-flex align-items-center justify-content-around my-2 my-md-0 footer__policy">
-          <!-- <a href="https://www.iubenda.com/privacy-policy/26315779" class="footer__privacy-link">Privacy Policy</a> -->
-          <a href="https://www.iubenda.com/privacy-policy/26315779" class="iubenda-white iubenda-embed" title="Privacy Policy ">Privacy Policy</a>
-        </div>
-      <!-- </div> -->
+      <div class="footer__copyright">
+        <p class="">Bryan Palma 2021 &copy;</p>
+      </div>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/bryanpalmafitness/" target="_blank" class="footer__link"><span class="fab fa-instagram fa-2x footer__icon"></span></a>
+      </div>
+      <div class="footer__policy">
+        <a href="https://www.iubenda.com/privacy-policy/26315779" class="iubenda-white iubenda-embed" title="Privacy Policy ">Privacy Policy</a>
+      </div>
     </div>
   </footer>
   
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
+  <script type="text/javascript" src="./scripts/navbar.js"></script>
 
   <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
 
