@@ -1,0 +1,27 @@
+@use './../abstracts/variables' as *;
+@use './../abstracts/mixins' as *;
+
+.card {
+    background-color: $light;
+    border: 1px solid red;
+
+    &__header {
+        max-width: 80px;
+    }
+
+    &__image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__title {
+        @include headline6;
+        color: $primary;
+        text-align: center;
+    }
+
+    &__text {
+        @include body2;
+        text-align: center;
+    }
+}

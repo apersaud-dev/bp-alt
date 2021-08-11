@@ -4,13 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Pavanam&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/stylesheet.css"> -->
+  
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="canonical" href="https://www.bryanpalma.com/training">
   
@@ -86,89 +81,84 @@
     </div>
   </header>
 
-<!-- Hero -->
-<section class="hero">
-  <div class="parallax-training">
-    <div class="container">
-      <div class="row align-items-end">
-        <div class="col hero-content">
-          <a href="#training"><span class="fas fa-chevron-down fa-3x" style="color: #ffffff;"></span></a>
-        </div>
+  <main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__parallax hero__parallax--training">
+      <div class="hero__container">
+        <a href="#training" class="hero__link">
+          <span class="fas fa-chevron-down fa-3x hero__icon"></span>
+        </a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Personal Training -->
-  <section id="training">
-    <div class="container">
-      <h1 class="headline text-center">Training</h1>
-      <div class="bottom-line"></div>
-      <div class="row">
-        <div class="d-flex flex-column col-12 col-md-6 order-2 justify-content-center p-3">
-          <div class="image-wrapper">
-            <img src="./img/bp-train.jpg" class="img-fluid" alt="Training a client.">
-          </div>
+  <section id="personal-training" class="training">
+    <!-- <div class="container"> -->
+      <h1 class="training__headline">Training</h1>
+      <div class="training__bottom-line"></div>
+      <div class="training__container">
+        <div class="training__image-wrapper">
+          <img src="./img/bp-train.jpg" class="training__image" alt="Training a client.">
         </div>
+        
         <div class="d-flex flex-column col-12 col-md-6 order-3 justify-content-center p-3">
-          <h2>Personal Training</h2>
-          <p>Looking for a one-on-one personal trainer to help you reach your fitness goals? I offer customized programs that work best for your specific goals. Before we get started, we’ll go through a general assessment and discussion about what success looks like when working with a personal trainer, so that we can figure out the best plan for you.</p>
+          <h2 class="training__sub-heading">Personal Training</h2>
+          <p class="training__description">Looking for a one-on-one personal trainer to help you reach your fitness goals? I offer customized programs that work best for your specific goals. Before we get started, we’ll go through a general assessment and discussion about what success looks like when working with a personal trainer, so that we can figure out the best plan for you.</p>
         </div>
       </div>
       <div class="row offering">
-        <h2 class="text-center mt-4">What you can expect:</h2>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-          <div class="col">
+        <h2 class="">What you can expect:</h2>
+        <div class="row">
+
             <div class="card">
-              <div class="card-top">
-                <img src="./img/icon-checklist.png" alt="" class="card-img-top offering-icon">
+              <div class="card__header">
+                <img src="./img/icon-checklist.png" alt="" class="card__image">
               </div>
-              <div class="card-body">
-                <h5 class="card-title">Initial Assessment</h5>
-                <p class="card-text">We'll talk about your goals and set a baseline for future sessions.</p>
+              <div class="card__body">
+                <h5 class="card__title">Initial Assessment</h5>
+                <p class="card__text">We'll talk about your goals and set a baseline for future sessions.</p>
               </div>
             </div>
-          </div>
-          <div class="col">
+
             <div class="card">
-              <div class="card-top">
-                <img src="./img/icon-appointment.png" alt="" class="card-img-top offering-icon">
+              <div class="card__header">
+                <img src="./img/icon-appointment.png" alt="" class="card__image">
               </div>
-              <div class="card-body">
-                <h5 class="card-title">Weekly Sessions</h5>
-                <p class="card-text">Regularly scheduled sessions to help you achieve your goals.</p>
+              <div class="card__body">
+                <h5 class="card__title">Weekly Sessions</h5>
+                <p class="card__text">Regularly scheduled sessions to help you achieve your goals.</p>
               </div>
             </div>
-          </div>
-          <div class="col">
+
             <div class="card">
-              <div class="card-top">
-                <img src="./img/icon-communication.png" alt="" class="card-img-top offering-icon">
+              <div class="card__header">
+                <img src="./img/icon-communication.png" alt="" class="card__image">
               </div>
-              <div class="card-body">
-                <h5 class="card-title">Two-Way Communication</h5>
-                <p class="card-text">Ongoing communication to keep you on track to your plan.</p>
+              <div class="card__body">
+                <h5 class="card__title">Two-Way Communication</h5>
+                <p class="card__text">Ongoing communication to keep you on track to your plan.</p>
               </div>
             </div>
-          </div>
-          <div class="col">
+
             <div class="card">
-              <div class="card-top">
-                <img src="./img/icon-virtual.png" alt="" class="card-img-top offering-icon">
+              <div class="card__header">
+                <img src="./img/icon-virtual.png" alt="" class="card__image">
               </div>
               
-              <div class="card-body">
-                <h5 class="card-title">All Virtual</h5>
-                <p class="card-text">Currently, all sessions and communication will be held virtually.</p>
+              <div class="card__body">
+                <h5 class="card__title">All Virtual</h5>
+                <p class="card__text">Currently, all sessions and communication will be held virtually.</p>
               </div>
             </div>
-          </div>
+
         </div>
-        <div class="d-flex flex-column col-12 align-items-center">
-          <a href="./contact.html" class="button btn-main order-4 mt-3"><strong>Start Today</strong></a>
-        </div>
+
+          <a href="./contact.html" class="training__button">Start Today</a>
+
       </div>
-    </div>
+    <!-- </div> -->
   </section>
 
   <div class="container">
@@ -176,73 +166,75 @@
   </div>
 
   <!-- Group Training -->
-   <section id="group-training" class="mb-5">
-    <div class="container">
-      <div class="row">
-        <div class="d-flex flex-column col-12 col-md-6 p-4 justify-content-center">
-           <h2>Group Fitness</h2>
-           <p>Looking to workout with your partner, friends or co-workers in a small group setting? I offer customized group fitness sessions for 2-10 people. Each session will include a warm-up, full body workout, and a cool down. The full body workout consists of strength and high-intensity interval training, with options to modify for any fitness level.</p>
+   <section id="group-training" class="training">
+    <div class="">
+      <div class="">
+        <div class="">
+           <h2 class="training__sub-heading">Group Fitness</h2>
+           <p class="training__description">Looking to workout with your partner, friends or co-workers in a small group setting? I offer customized group fitness sessions for 2-10 people. Each session will include a warm-up, full body workout, and a cool down. The full body workout consists of strength and high-intensity interval training, with options to modify for any fitness level.</p>
         </div>
-        <div class="d-flex flex-column col-12 col-md-6 justify-content-center p-3">
-          <div class="image-wrapper">
-            <img src="./img/group-training.jpg" class="img-fluid" alt="Bryan Palma leading a group workout in a gym.">
+        <div class="">
+          <div class="training__image-wrapper">
+            <img src="./img/group-training.jpg" class="training__image" alt="Bryan Palma leading a group workout in a gym.">
           </div>
         </div>
       </div>
-      <div class="row offering">
-        <h2 class="text-center mt-4">What you can expect:</h2>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-          <div class="col">
+      <div class="">
+        <h2 class="">What you can expect:</h2>
+        <div class="wrapper">
+
             <div class="card">
-              <div class="card-top">
-                <img src="./img/icon-appointment.png" alt="" class="card-img-top offering-icon">
+              <div class="card__header">
+                <!-- <img src="./img/icon-appointment.png" alt="" class="card__image"> -->
               </div>
-              <div class="card-body">
-                <h5 class="card-title">Weekly Sessions</h5>
-                <p class="card-text">Regularly scheduled to consistently achieve the goals you set.</p>
+              <div class="card__body">
+                <h5 class="card__title">Weekly Sessions</h5>
+                <p class="card__text">Regularly scheduled to consistently achieve the goals you set.</p>
               </div>
             </div>
-          </div>
-          <div class="col">
+
+
             <div class="card">
-              <div class="card-top">
-                <img src="./img/icon-online-education.png" alt="" class="card-img-top offering-icon">
+              <div class="card__header">
+                <!-- <img src="./img/icon-online-education.png" alt="" class="card__image"> -->
               </div>
-              <div class="card-body">
-                <h5 class="card-title">Exercise Instruction</h5>
-                <p class="card-text">Demos and instructions for every exercise.</p>
+              <div class="card__body">
+                <h5 class="card__title">Exercise Instruction</h5>
+                <p class="card__text">Demos and instructions for every exercise.</p>
               </div>
             </div>
-          </div>
-          <div class="col">
+
+
             <div class="card">
-              <div class="card-top">
-                <img src="./img/icon-weights.png" alt="" class="card-img-top offering-icon">
+              <div class="card__header">
+                <!-- <img src="./img/icon-weights.png" alt="" class="card__image"> -->
               </div>
-              <div class="card-body">
-                <h5 class="card-title">Strength &amp; HIIT</h5>
-                <p class="card-text">A combination of both strength and HIIT workouts.</p>
+              <div class="card__body">
+                <h5 class="card__title">Strength &amp; HIIT</h5>
+                <p class="card__text">A combination of both strength and HIIT workouts.</p>
               </div>
             </div>
-          </div>
-          <div class="col">
+
             <div class="card">
-              <div class="card-top">
-                <img src="./img/icon-seminar.png" alt="" class="card-img-top offering-icon">
+              <div class="card__header">
+                <!-- <img src="./img/icon-seminar.png" alt="" class="card__image"> -->
               </div>
-              <div class="card-body">
-                <h5 class="card-title">All Virtual</h5>
-                <p class="card-text">Currently, all sessions and communication will be held virtually.</p>
+              <div class="card__body">
+                <h5 class="card__title">All Virtual</h5>
+                <p class="card__text">Currently, all sessions and communication will be held virtually.</p>
               </div>
             </div>
+
           </div>
         </div>
-        <div class="d-flex flex-column col-12 align-items-center">
-          <a href="./contact.html" class="button btn-main order-4 mt-3"><strong>Get Started</strong></a>
-        </div>
+        <!-- <div class="""> -->
+          <a href="./contact.html" class="training__button">Get Started</a>
+        <!-- </div> -->
       </div>
     </div>
   </section>
+
+</main>
 
   <!-- Footer -->
   <footer id="footer" class="footer">
