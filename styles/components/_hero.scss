@@ -22,6 +22,10 @@
                 background-position: left top;
             }
         }
+
+        &--about {
+            background: url('./../../assets/images/about-hero-compressed-bw-resize.jpg') top 50px center/cover no-repeat;
+        }
     }
 
     &__container {

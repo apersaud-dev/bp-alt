@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400;1,600&family=Oswald:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400;1,600&family=Oswald:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400;1,600&family=Oswald:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400;1,600&family=Oswald:wght@400;500&display=swap");
 html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ol, ul, li, header, nav, main, section, blockquote, figcaption, footer {
   margin: 0;
   padding: 0;
@@ -104,6 +105,7 @@ a {
   width: 3rem;
   background: none;
   border: none;
+  margin-top: 0.5rem;
   cursor: pointer;
 }
 .header__toggle:hover .header__menu-svg {
@@ -154,6 +156,7 @@ a {
   width: 3rem;
   background: none;
   border: none;
+  margin-top: 0.5rem;
 }
 .nav__close:hover .nav__close-svg {
   fill: #F2BD0A;
@@ -299,6 +302,9 @@ a {
     background-position: left top;
   }
 }
+.hero__parallax--about {
+  background: url("./../../assets/images/about-hero-compressed-bw-resize.jpg") top 50px center/cover no-repeat;
+}
 .hero__container {
   height: 100%;
   display: flex;
@@ -408,9 +414,7 @@ a {
   }
 }
 .home__image {
-  position: relative;
   border-radius: 3rem;
-  border: 5px solid #FCFCFC;
   max-width: 100%;
   height: auto;
   margin-bottom: 1.5rem;
@@ -474,4 +478,99 @@ a {
   letter-spacing: 0.4px;
   font-style: italic;
   margin-left: 1rem;
+}
+
+.about {
+  background-color: #FCFCFC;
+  padding: 1rem;
+  padding-top: 98px;
+}
+.about__headline {
+  font: 400 3.4375rem "Oswald", sans-serif;
+  letter-spacing: -0.5px;
+  color: #46A0E4;
+  text-transform: uppercase;
+  text-align: center;
+}
+.about__bottom-line {
+  height: 5px;
+  width: 5em;
+  position: relative;
+  background-color: #F2BD0A;
+  display: block;
+  margin: 0 auto 2.5em auto;
+}
+.about__container {
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .about__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .about__container {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+}
+.about__image-wrapper {
+  max-width: 500px;
+}
+@media screen and (min-width: 768px) {
+  .about__image-wrapper {
+    max-width: 45%;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .about__image-wrapper {
+    max-width: 540px;
+  }
+}
+.about__image {
+  border-radius: 3rem;
+  max-width: 100%;
+  max-height: 500px;
+  margin-bottom: 1.5rem;
+}
+.about__content {
+  max-width: 500px;
+}
+@media screen and (min-width: 768px) {
+  .about__content {
+    max-width: 45%;
+  }
+}
+.about__paragraph {
+  font: 400 0.875rem "Open Sans", sans-serif;
+  letter-spacing: 0.25px;
+  margin-bottom: 1rem;
+}
+.about__button {
+  display: inline-block;
+  font: 600 1rem "Open Sans", sans-serif;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: #FCFCFC;
+  background-color: #46A0E4;
+  padding: 0.75rem 1rem;
+  border-radius: 1.25rem;
+  margin-top: 1rem;
+  transition: color 0.5s;
+  margin-bottom: 3rem;
+  transition: all 0.5s;
+}
+.about__button:hover {
+  background-color: #174263;
+  transition: all 0.5s;
+}
+.about__button:hover {
+  background-color: #174263;
+  transition: all 0.5s;
 }/*# sourceMappingURL=main.css.map */
