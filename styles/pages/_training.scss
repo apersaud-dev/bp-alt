@@ -23,19 +23,23 @@
 
     &__container {
         padding: 0 0.5rem;
+
+        @include large-breakpoint {
+            @include max-size;
+        }
+    }
+
+    &__content-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 2rem;
 
         @include medium-breakpoint {
             flex-direction: row;
             justify-content: space-between;
-            align-items: flex-start;
-        }
-
-        @include large-breakpoint {
-            @include max-size;
+            // align-items: flex-start;
         }
     }
 
@@ -49,6 +53,14 @@
         @include large-breakpoint {
             max-width: 540px;
         }
+
+        &--group {
+            order: -1;
+
+            @include medium-breakpoint {
+                order: 2;
+            }
+        }
     }
 
     &__image {
@@ -59,14 +71,58 @@
         margin-bottom: 1.5rem;
     }
 
+    &__content {
+        max-width: 500px;
+
+        @include medium-breakpoint {
+            // order: 1;
+            max-width: 45%;
+        }
+    }
+
     &__sub-heading {
-        @include headline4;
+        @include headline3;
         margin-bottom: 1rem;
     }
 
     &__description {
         @include body1;
         margin-bottom: 1rem;
+    }
+
+    &__offering {    
+        text-align: center;
+    }
+
+    &__offering-heading {
+        @include headline4;
+        margin-bottom: 0.75rem;
+    }
+
+    &__card-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include medium-breakpoint {
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+    }
+
+    &__button {
+        display: inline-block;
+        @include button;
+        margin-bottom: 3rem;
+        transition: all 0.5s;
+
+        &:hover {
+            background-color: $dark-blue;
+            transition: all 0.5s;
+        }
     }
 
 }

@@ -328,20 +328,31 @@ a {
 
 .card {
   background-color: #E5E7E6;
-  border: 1px solid red;
+  max-width: 250px;
+  padding: 1rem;
+  border: 1px solid #174263;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
 }
 .card__header {
-  max-width: 80px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
 }
 .card__image {
-  max-width: 100%;
+  max-width: 80px;
   height: auto;
+}
+.card__body {
+  max-width: 250px;
+  padding: 0.5rem;
 }
 .card__title {
   font: 500 1.125rem "Oswald", sans-serif;
   letter-spacing: 0.15px;
   color: #46A0E4;
   text-align: center;
+  margin-bottom: 0.25rem;
 }
 .card__text {
   font: 400 0.875rem "Open Sans", sans-serif;
@@ -630,22 +641,24 @@ a {
 }
 .training__container {
   padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (min-width: 768px) {
-  .training__container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
 }
 @media screen and (min-width: 1080px) {
   .training__container {
     max-width: 1080px;
     margin: 0 auto;
+  }
+}
+.training__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .training__content-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 .training__image-wrapper {
@@ -661,19 +674,79 @@ a {
     max-width: 540px;
   }
 }
+.training__image-wrapper--group {
+  order: -1;
+}
+@media screen and (min-width: 768px) {
+  .training__image-wrapper--group {
+    order: 2;
+  }
+}
 .training__image {
   border-radius: 3rem;
   max-width: 100%;
   height: auto;
   margin-bottom: 1.5rem;
 }
+.training__content {
+  max-width: 500px;
+}
+@media screen and (min-width: 768px) {
+  .training__content {
+    max-width: 45%;
+  }
+}
 .training__sub-heading {
-  font: 400 1.9375rem "Oswald", sans-serif;
-  letter-spacing: 0.25px;
+  font: 400 2.75rem "Oswald", sans-serif;
+  letter-spacing: 0px;
   margin-bottom: 1rem;
 }
 .training__description {
   font: 400 1rem "Open Sans", sans-serif;
   letter-spacing: 0.5px;
   margin-bottom: 1rem;
+}
+.training__offering {
+  text-align: center;
+}
+.training__offering-heading {
+  font: 400 1.9375rem "Oswald", sans-serif;
+  letter-spacing: 0.25px;
+  margin-bottom: 0.75rem;
+}
+.training__card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .training__card-wrapper {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+.training__button {
+  display: inline-block;
+  font: 600 1rem "Open Sans", sans-serif;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: #FCFCFC;
+  background-color: #46A0E4;
+  padding: 0.75rem 1rem;
+  border-radius: 1.25rem;
+  margin-top: 1rem;
+  transition: color 0.5s;
+  margin-bottom: 3rem;
+  transition: all 0.5s;
+}
+.training__button:hover {
+  background-color: #174263;
+  transition: all 0.5s;
+}
+.training__button:hover {
+  background-color: #174263;
+  transition: all 0.5s;
 }/*# sourceMappingURL=main.css.map */
