@@ -1,0 +1,81 @@
+@use './../abstracts/variables' as *;
+@use './../abstracts/mixins' as *;
+
+.form {
+
+    
+
+    &__wrapper {
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        background-color: $white;
+        border: 1px solid $dark-blue;
+        border-radius: 1rem;
+    }
+
+    &__row {
+        &--top {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+    }
+
+    &__label {
+        position: relative;
+
+        &:focus-within > span
+        {
+            color: $primary;
+            transform:translateY(-26px);
+        }
+
+        &--float{
+            position: absolute;
+            top: 0;
+            left: 0.25rem;
+            @include body2;
+            transition-duration: 300ms;
+        }
+
+        &--textarea {
+            position: absolute;
+            @include body2;
+            transition-duration: 300ms;;
+        }
+    }
+
+    &__input {
+        @include body2;
+        width: 100%;
+        background: $white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-bottom: 1px solid $dark-blue;
+        margin-bottom: 2.5rem;
+
+        &--textarea {
+            height: 8rem;
+        }
+    }
+
+    &__submit {
+        @include button;
+        border: none;
+        border-radius: 1rem;
+        transition: all 0.5s;
+
+        &:hover {
+            background-color: $dark-blue;
+            transition: all 0.5s;;
+        }
+    }
+}
+
+span[data-state="valid"] {
+    color: $primary;
+    transform: translateY(-26px);
+}
+
+// https://dev.to/web2feel/html-css-form-with-floating-labels-2o0i
