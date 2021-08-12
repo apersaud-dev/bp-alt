@@ -1,0 +1,36 @@
+@use './../abstracts/variables' as *;
+@use './../abstracts/mixins' as *;
+
+.thanks {
+    background-color: $white;
+    padding: 1rem;
+    padding-top: 98px;
+    min-height: calc(100vh - 64px);
+
+    @include medium-breakpoint {
+        padding: 98px 2rem 2rem 2rem;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 25vh;
+    }
+
+    &__headline {
+        @include headline3;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        @include body1;
+        margin-bottom: 1rem;
+    }
+
+    &__button {
+        @include button;
+    }
+}

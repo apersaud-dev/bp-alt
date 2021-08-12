@@ -35,193 +35,199 @@
   <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script> -->
 </head>
 <body>
-<!-- Navbar -->
-<header class="header">
-  <div class="header__container">
-    <a href="./index.html" class="header__logo">
-      <img src="./assets/logos/bp-logo.png" alt="Bryan Palma Fitness" class="header__logo-image">
-    </a>
+  <!-- Navbar -->
+  <header class="header">
+    <div class="header__container">
+      <a href="./index.html" class="header__logo">
+        <img src="./assets/logos/bp-logo.png" alt="Bryan Palma Fitness" class="header__logo-image">
+      </a>
 
-    <button class="header__toggle" id="nav-toggle">
-      <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-      <path d="M43,15H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,14.1,44.1,15,43,15z" class="header__menu-svg"/>
-      <path d="M43,27H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,26.1,44.1,27,43,27z" class="header__menu-svg"/>
-      <path d="M43,39H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,38.1,44.1,39,43,39z" 
-      class="header__menu-svg"/>
-    </svg>
-  </button>
+      <button class="header__toggle" id="nav-toggle">
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <path d="M43,15H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,14.1,44.1,15,43,15z" class="header__menu-svg"/>
+        <path d="M43,27H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,26.1,44.1,27,43,27z" class="header__menu-svg"/>
+        <path d="M43,39H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,38.1,44.1,39,43,39z" 
+        class="header__menu-svg"/>
+      </svg>
+    </button>
 
-    <nav class="nav" id="nav-menu">
-      <div class="nav__content bd-grid">
-        
-        <button class="nav__close" id="nav-close">
-          <svg viewBox="7.1 7.042 33.951 33.942" xmlns="http://www.w3.org/2000/svg">
-            <path d="M43,15H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,14.1,44.1,15,43,15z" transform="matrix(0.707107, -0.707107, 0.707107, 0.707107, -1.374667, 32.498714)" class="nav__close-svg"/>
-            <path d="M 43.071 27.013 L 5.071 27.013 C 3.971 27.013 3.071 26.113 3.071 25.013 L 3.071 23.013 C 3.071 21.913 3.971 21.013 5.071 21.013 L 43.071 21.013 C 44.171 21.013 45.071 21.913 45.071 23.013 L 45.071 25.013 C 45.071 26.113 44.171 27.013 43.071 27.013 Z" class="nav__close-svg" transform="matrix(0.707108, 0.707106, -0.707106, 0.707108, 24.029942, -9.987522)"/>
-          </svg>
-        </button>
+      <nav class="nav" id="nav-menu">
+        <div class="nav__content bd-grid">
+          
+          <button class="nav__close" id="nav-close">
+            <svg viewBox="7.1 7.042 33.951 33.942" xmlns="http://www.w3.org/2000/svg">
+              <path d="M43,15H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,14.1,44.1,15,43,15z" transform="matrix(0.707107, -0.707107, 0.707107, 0.707107, -1.374667, 32.498714)" class="nav__close-svg"/>
+              <path d="M 43.071 27.013 L 5.071 27.013 C 3.971 27.013 3.071 26.113 3.071 25.013 L 3.071 23.013 C 3.071 21.913 3.971 21.013 5.071 21.013 L 43.071 21.013 C 44.171 21.013 45.071 21.913 45.071 23.013 L 45.071 25.013 C 45.071 26.113 44.171 27.013 43.071 27.013 Z" class="nav__close-svg" transform="matrix(0.707108, 0.707106, -0.707106, 0.707108, 24.029942, -9.987522)"/>
+            </svg>
+          </button>
 
-        <div class="nav__menu">
-          <ul class="nav__list">
-            <li class="nav__list-item"><a href="./about.html" class="nav__link">About</a></li>
-            <li class="nav__list-item"><a href="./training.html" class="nav__link">Training</a></li>
-            <li class="nav__list-item"><a href="./contact.html" class="nav__link nav__link--active">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="nav__social">
-          <a href="" target="_blank" class="nav__social-link">
-            <span class="fab fa-instagram fa-2x nav__social-icon"></span>
-          </a>
-        </div>
-
-      </div>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <div class="contact__container">
-      <h1 class="contact__headline">Contact Me</h1>
-      <div class="contact__bottom-line"></div>
-        <div class="contact__content">
-          <div class="contact__image-wrapper">
-            <img src="./img/contact-content.jpg" alt="Bryan Palma leaning against a wall." class="contact__image">
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__list-item"><a href="./about.html" class="nav__link">About</a></li>
+              <li class="nav__list-item"><a href="./training.html" class="nav__link">Training</a></li>
+              <li class="nav__list-item"><a href="./contact.html" class="nav__link nav__link--active">Contact</a></li>
+            </ul>
           </div>
-          <div class="contact__content-wrapper">
-            <h2 class="contact__subheading">Have a question?</h2>
-            <p class="contact__description">Fill out the form below and let's chat!</p>
 
-            <form name="Contact-Form" accept-charset="UTF-8" action="https://submit-form.com/Wfsg66ey" method="POST" class="form">
-              <input type="hidden" name="_redirect" value="https://www.bryanpalma.com/thankyou">
-              
-              <div class="form__wrapper">
-
-                <div class="form__row form__row--top">
-                  <label for="firstName" class="form__label">
-                      <input 
-                        type="text" 
-                        name="firstName" 
-                        class="form__input"
-                        id="firstName" 
-                        required
-                      >
-                      <span class="form__label--float">First Name</span>
-                    </label>
-
-                    <label for="lastName" class="form__label">
-                      <input 
-                        type="text" 
-                        name="lastName" 
-                        class="form__input" 
-                        id="lastName" 
-                        
-                        required
-                      >
-                      <span class="form__label--float">Last Name</span>
-                    </label>
-                  </div>            
-
-              <div class="form__row">
-                <label for="email" class="form__label">
-                  <input 
-                    type="email" 
-                    name="emailAddress" 
-                    class="form__input" 
-                    id="email" 
-                    required
-                  >
-                    <span class="form__label--float">Email Address</span></label>
-              </div>
-
-              <div class="form__row">
-                <label for="message" class="form__label"><span class="form__label--textarea" data-state="invalid">How can I help you?</span>
-                  <textarea 
-                    name="message" 
-                    class="form__input form__input--textarea" 
-                    id="message" 
-                    data-state="invalid"
-                    required></textarea>
-                  
-                </label>
-              </div>
-
-              <!-- <input type="text" name="_gotcha" class="badBad"> -->
-              <div class="form__row">
-                <button 
-                  type="submit" 
-                  class="form__submit"
-                >
-                  Submit
-                </button>
-              </div>
-            </div>
-            </form>
+          <div class="nav__social">
+            <a href="" target="_blank" class="nav__social-link">
+              <span class="fab fa-instagram fa-2x nav__social-icon"></span>
+            </a>
           </div>
+
         </div>
+      </nav>
     </div>
-  </section>
+  </header>
 
-<!-- Follow Me -->
-<!-- <section class="follow my-5">
-  <div class="container-fluid px-5">
-    <h2 class="social-callout text-center mb-5">Follow Me</h2>
-      <div class="row mb-3">
-        <div class="col-6 col-lg-2">
-          <div class="sm-post">
-            <img src="./img/insta-square-1.jpg" class="sm-image">
-            <div class="overlay">
-              <a href="https://www.instagram.com/bryanpalmafitness/" target="_blank" class="sm-text"><span class="fab fa-instagram fa-2x"></span></a>
+  <main>
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="contact__container">
+        <h1 class="contact__headline">Contact Me</h1>
+        <div class="contact__bottom-line"></div>
+          <div class="contact__content">
+            <div class="contact__image-wrapper">
+              <img src="./img/contact-content.jpg" alt="Bryan Palma leaning against a wall." class="contact__image">
             </div>
-          </div>  
-        </div>
-        <div class="col-6 col-lg-2">
-          <div class="sm-post">
-            <img src="./img/insta-square-2.jpg" alt="" class="sm-image">
-            <div class="overlay">
-              <a href="https://www.instagram.com/bryanpalmafitness/" target="_blank" class="sm-text"><span class="fab fa-instagram fa-2x"></span></a>
+            <div class="contact__content-wrapper">
+              <h2 class="contact__subheading">Have a question?</h2>
+              <p class="contact__description">Fill out the form below and let's chat!</p>
+
+              <form name="Contact-Form" accept-charset="UTF-8" action="https://submit-form.com/Wfsg66ey" method="POST" class="form">
+                <input type="hidden" name="_redirect" value="https://www.bryanpalma.com/thankyou">
+                
+                <div class="form__wrapper">
+
+                  <div class="form__row form__row--top">
+                    <label for="firstName" class="form__label">
+                        <input 
+                          type="text" 
+                          name="firstName" 
+                          class="form__input"
+                          id="firstName" 
+                          required
+                        >
+                        <span class="form__label--float">First Name</span>
+                      </label>
+
+                      <label for="lastName" class="form__label">
+                        <input 
+                          type="text" 
+                          name="lastName" 
+                          class="form__input" 
+                          id="lastName" 
+                          
+                          required
+                        >
+                        <span class="form__label--float">Last Name</span>
+                      </label>
+                    </div>            
+
+                <div class="form__row">
+                  <label for="email" class="form__label">
+                    <input 
+                      type="email" 
+                      name="emailAddress" 
+                      class="form__input" 
+                      id="email" 
+                      required
+                    >
+                      <span class="form__label--float">Email Address</span></label>
+                </div>
+
+                <div class="form__row">
+                  <label for="message" class="form__label"><span class="form__label--textarea" data-state="invalid">How can I help you?</span>
+                    <textarea 
+                      name="message" 
+                      class="form__input form__input--textarea" 
+                      id="message" 
+                      data-state="invalid"
+                      required></textarea>
+                    
+                  </label>
+                </div>
+
+                <!-- <input type="text" name="_gotcha" class="badBad"> -->
+                <div class="form__row">
+                  <button 
+                    type="submit" 
+                    class="form__submit"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+              </form>
             </div>
           </div>
-        </div>
-        <div class="col-6 col-lg-2">
-          <div class="sm-post">
-            <img src="./img/insta-square-3.jpg" class="sm-image">
-            <div class="overlay">
-              <a href="https://www.instagram.com/bryanpalmafitness/" target="_blank" class="sm-text"><span class="fab fa-instagram fa-2x"></span></a>
+      </div>
+    </section>
+
+    <!-- Follow Me -->
+    <section class="social">
+      <div class="social__container">
+        <h2 class="social__headline ">Follow Bryan</h2>
+        <div class="social__wrapper">
+          <div class="social__image-wrapper">
+            <img src="./img/insta-square-1.jpg" class="social__image">
+            <div class="social__overlay">
+              <a href="https://www.instagram.com/bryanpalmafitness/" target="_blank" class="social__text">
+                <span class="fab fa-instagram fa-2x"></span>
+              </a>
             </div>
           </div>
-        </div>
-        <div class="col-6 col-lg-2">
-          <div class="sm-post">
-            <img src="./img/insta-square-4.jpg" class="sm-image">
-            <div class="overlay">
-              <a href="https://www.instagram.com/bryanpalmafitness/" target="_blank" class="sm-text"><span class="fab fa-instagram fa-2x"></span></a>
+        
+          <div class="social__image-wrapper">
+            <img src="./img/insta-square-2.jpg" alt="" class="social__image">
+            <div class="social__overlay">
+              <a href="https://www.instagram.com/bryanpalmafitness/" target="_blank" class="social__text">
+                <span class="fab fa-instagram fa-2x"></span>
+              </a>
             </div>
           </div>
-        </div>
-        <div class="col-6 col-lg-2">
-          <div class="sm-post">
-            <img src="./img/insta-square-5.jpeg" alt="" class="sm-image">
-            <div class="overlay">
-              <a href="https://www.instagram.com/bryanpalmafitness/" target="_blank" class="sm-text"><span class="fab fa-instagram fa-2x"></span></a>
+
+          <div class="social__image-wrapper">
+            <img src="./img/insta-square-3.jpg" class="social__image">
+            <div class="social__overlay">
+              <a href="https://www.instagram.com/bryanpalmafitness/" target="_blank" class="social__text">
+                <span class="fab fa-instagram fa-2x"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="social__image-wrapper">
+            <img src="./img/insta-square-4.jpg" class="social__image">
+            <div class="social__overlay">
+              <a href="https://www.instagram.com/bryanpalmafitness/" target="_blank" class="social__text">
+                <span class="fab fa-instagram fa-2x"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="social__image-wrapper">
+            <img src="./img/insta-square-5.jpeg" alt="" class="social__image">
+            <div class="social__overlay">
+              <a href="https://www.instagram.com/bryanpalmafitness/" target="_blank" class="social__text">
+                <span class="fab fa-instagram fa-2x"></span>
+              </a>
             </div>
           </div>   
-        </div>
-        <div class="col-6 col-lg-2">
-          <div class="sm-post">
-            <img src="./img/insta-square-6.jpg" alt="" class="sm-image">
-            <div class="overlay">
-              <a href="https://www.instagram.com/bryanpalmafitness/" target="_blank" class="sm-text"><span class="fab fa-instagram fa-2x"></span></a>
+
+          <div class="social__image-wrapper">
+            <img src="./img/insta-square-6.jpg" alt="" class="social__image">
+            <div class="social__overlay">
+              <a href="https://www.instagram.com/bryanpalmafitness/" target="_blank" class="social__text">
+                <span class="fab fa-instagram fa-2x"></span>
+              </a>
             </div>
           </div>
+
         </div>
       </div>
-  </div>
-</section> -->
+    </section>
+  </main> 
 
-</main> 
   <!-- Footer -->
   <footer id="footer" class="footer">
     <div class="footer__content">

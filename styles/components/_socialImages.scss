@@ -1,0 +1,84 @@
+@use './../abstracts/variables' as *;
+@use './../abstracts/mixins' as *;
+
+.social {
+    background: $light;
+    padding: 1rem;
+
+    &__container {
+        padding: 0 0.5rem;
+    }
+
+    &__headline {
+        @include headline3;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+
+      @include large-breakpoint {
+          @include max-size;
+          grid-template-columns: repeat(6, 1fr);
+      }
+    }
+
+    &__image-wrapper {
+        border-radius: 2rem;
+        position: relative;
+        overflow: hidden;
+
+        @include large-breakpoint {
+            border-radius: 1rem;
+        }
+
+        &:hover .social__image {
+            transform: scale(1.08); 
+
+            transition: all 0.5s;
+        }
+
+        &:hover .social__overlay {
+            opacity: 1;
+
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 2rem;
+
+        @include large-breakpoint {
+            border-radius: 1rem;
+        }
+
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: rgba(0,0,0,0.4)
+    }
+
+    &__text {
+        position: absolute;
+        color: $white;
+        bottom: 35%;
+        left: 50%;
+        transform: translate(-35%, -50%);;
+        transition: all 0.5s;
+    }
+}

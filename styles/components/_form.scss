@@ -3,8 +3,6 @@
 
 .form {
 
-    
-
     &__wrapper {
         padding: 2rem 1rem;
         display: flex;
@@ -62,11 +60,14 @@
 
     &__submit {
         @include button;
-        border: none;
+        color: $dark-blue;
+        background-color: transparent;
+        border: 2px solid $dark-blue;
         border-radius: 1rem;
         transition: all 0.5s;
 
         &:hover {
+            color: $white;
             background-color: $dark-blue;
             transition: all 0.5s;;
         }
