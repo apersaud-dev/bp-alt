@@ -117,9 +117,14 @@
 
     &__headline {
         @include headline2;
+        font-size: 2.8125rem;
         color: $primary;
         text-transform: uppercase;
         text-align: center;
+
+        @include medium-breakpoint {
+            font-size: 3.4375rem;
+        }
     }
 
     &__bottom-line {

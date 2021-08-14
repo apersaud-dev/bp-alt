@@ -290,22 +290,14 @@ a {
 .hero__parallax {
   min-height: 100vh;
   background-attachment: fixed;
-  background-position: top 35px center;
-  background-repeat: no-repeat;
-  background-size: cover;
   z-index: -1;
 }
 .hero__parallax--home {
-  background-image: url("./../../assets/images/home-hero-small-bw.jpg");
+  background: url("./../../assets/images/home-hero-compressed-bw-resize.jpg") top 35px left -440px/cover no-repeat;
 }
 @media screen and (min-width: 768px) {
   .hero__parallax--home {
-    background: url("./../../assets/images/home-hero-compressed-bw.jpg") left -24rem top;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .hero__parallax--home {
-    background-position: left top;
+    background-position: top 35px center;
   }
 }
 .hero__parallax--about {
@@ -629,9 +621,15 @@ span[data-state=valid] {
 .testimonials__headline {
   font: 400 3.4375rem "Oswald", sans-serif;
   letter-spacing: -0.5px;
+  font-size: 2.8125rem;
   color: #46A0E4;
   text-transform: uppercase;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .testimonials__headline {
+    font-size: 3.4375rem;
+  }
 }
 .testimonials__bottom-line {
   height: 5px;
@@ -983,11 +981,13 @@ span[data-state=valid] {
 .contact__subheading {
   font: 400 1.9375rem "Oswald", sans-serif;
   letter-spacing: 0.25px;
+  text-align: center;
   margin-bottom: 1rem;
 }
 .contact__description {
   font: 400 1rem "Open Sans", sans-serif;
   letter-spacing: 0.5px;
+  text-align: center;
   margin-bottom: 2rem;
 }
 
